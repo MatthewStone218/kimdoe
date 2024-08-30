@@ -8,8 +8,8 @@
   "name":"obj_init",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj",
-    "path":"folders/PRODUCTIVITY/obj.yy",
+    "name":"system",
+    "path":"folders/Objects/system.yy",
   },
   "parentObjectId":null,
   "persistent":false,

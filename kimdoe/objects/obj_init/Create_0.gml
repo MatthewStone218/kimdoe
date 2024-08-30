@@ -19,8 +19,18 @@ global.keyboard_visible = 0;
 
 global.cell_width = 100;
 
+global.state = ST.MAIN;
+
 scr_live_set_auto()
 
 randomize();
 
 room_goto(val_room_start);
+
+enum ST
+{
+	MAIN,
+	PAUSE,
+	GAME,
+	MOVING
+}

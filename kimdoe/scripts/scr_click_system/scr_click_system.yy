@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_click_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_click_system",
+  "parent":{
+    "name":"click_system",
+    "path":"folders/Scripts/click_system.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
