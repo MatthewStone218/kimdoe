@@ -9,6 +9,12 @@ if(action_time < 1)
 	if(action_time >= 1)
 	{
 		action_time = 1;
+		
+		if(action == "move")
+		{
+			set_position();
+		}
+		
 		sprite_index = spr_player_idle;
 		action = "none";
 	}
@@ -16,8 +22,7 @@ if(action_time < 1)
 
 if(action == "move")
 {
-	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
-	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
+	set_position();
 }
 
 if(action_input == "none")
@@ -55,7 +60,7 @@ if(action_time == 1)
 			action = "kick";
 			action_time = 0;
 			var _inst = instance_position(x-global.cell_width,y,obj_block);
-			with(_inst){ kick("left") }
+			with(_inst){ kicked("left") }
 			sprite_index = spr_player_kick;
 			image_index = 0;
 		}
@@ -78,7 +83,7 @@ if(action_time == 1)
 			action = "kick";
 			action_time = 0;
 			var _inst = instance_position(x+global.cell_width,y,obj_block);
-			with(_inst){ kick("right") }
+			with(_inst){ kicked("right") }
 			sprite_index = spr_player_kick;
 			image_index = 0;
 		}
@@ -101,7 +106,7 @@ if(action_time == 1)
 			action = "kick";
 			action_time = 0;
 			var _inst = instance_position(x,y-global.cell_width,obj_block);
-			with(_inst){ kick("up") }
+			with(_inst){ kicked("up") }
 			sprite_index = spr_player_kick;
 			image_index = 0;
 		}
@@ -124,7 +129,7 @@ if(action_time == 1)
 			action = "kick";
 			action_time = 0;
 			var _inst = instance_position(x,y+global.cell_width,obj_block);
-			with(_inst){ kick("down") }
+			with(_inst){ kicked("down") }
 			sprite_index = spr_player_kick;
 			image_index = 0;
 		}

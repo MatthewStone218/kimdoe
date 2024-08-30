@@ -11,3 +11,9 @@ y_prev = y;
 
 x_goal = x;
 y_goal = y;
+
+function set_position()
+{
+	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
+	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
+}
