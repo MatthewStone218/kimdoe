@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"kor_leng",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"kor_leng",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"room_goto_f",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"room_goto_f",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

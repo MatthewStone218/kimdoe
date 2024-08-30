@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ime_english_qwerty",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ime_english_qwerty",
+  "parent":{
+    "name":"ime",
+    "path":"folders/PRODUCTIVITY/scr/ime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ime_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ime_init",
+  "parent":{
+    "name":"ime",
+    "path":"folders/PRODUCTIVITY/scr/ime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

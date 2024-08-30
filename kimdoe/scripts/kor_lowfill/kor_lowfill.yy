@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"kor_lowfill",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"kor_lowfill",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

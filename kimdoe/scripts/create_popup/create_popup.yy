@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"create_popup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_popup",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

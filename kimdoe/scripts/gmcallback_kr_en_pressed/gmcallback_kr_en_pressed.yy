@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"gmcallback_kr_en_pressed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gmcallback_kr_en_pressed",
+  "parent":{
+    "name":"KEYBOARD",
+    "path":"folders/PRODUCTIVITY/scr/KEYBOARD.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

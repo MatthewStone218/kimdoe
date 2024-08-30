@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"string_w",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"string_w",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"korinput",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"korinput",
+  "parent":{
+    "name":"KorInput",
+    "path":"folders/KorInput.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

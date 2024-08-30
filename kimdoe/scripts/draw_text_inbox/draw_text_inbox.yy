@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_text_inbox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_text_inbox",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

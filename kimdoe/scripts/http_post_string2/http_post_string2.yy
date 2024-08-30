@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"http_post_string2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"http_post_string2",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

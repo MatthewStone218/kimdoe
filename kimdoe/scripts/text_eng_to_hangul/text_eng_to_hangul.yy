@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"text_eng_to_hangul",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"text_eng_to_hangul",
+  "parent":{
+    "name":"scr",
+    "path":"folders/PRODUCTIVITY/scr.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
