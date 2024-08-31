@@ -39,7 +39,7 @@ function set_dialogue(struct)
 		
 		if(struct_now.type == "text")
 		{
-			instance_create_depth(960,950,-4800,obj_ui_dialogue_text,{text: struct_now.text});
+			instance_create_depth(960,900,-4800,obj_ui_dialogue_text,{text: struct_now.text});
 		}
 		else if(struct_now.type == "choice")
 		{
