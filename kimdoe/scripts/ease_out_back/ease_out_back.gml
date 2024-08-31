@@ -4,5 +4,5 @@ function ease_out_back(time){
 	var c1 = 1.70158;
 	var c3 = c1 + 1;
 
-	return 1 + c3 * power(x - 1, 3) + c1 * power(x - 1, 2);
+	return 1 + c3 * power(time - 1, 3) + c1 * power(time - 1, 2);
 }

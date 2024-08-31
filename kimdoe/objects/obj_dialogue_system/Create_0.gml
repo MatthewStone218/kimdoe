@@ -81,7 +81,7 @@ function clean_dialogue()
 }
 
 register_click_func(
-	function(){ return global.state == ST.DIALOGUE; }
+	function(){ return global.state == ST.DIALOGUE && input_check_pressed("ok"); }
 	,
 	function(){
 		if(variable_struct_exists(struct_now,"type"))
