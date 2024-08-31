@@ -8,3 +8,5 @@ next_room = -1;
 step = 1;
 
 depth = -1000000;
+
+global.state = ST.MOVING;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"unlock_stage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"unlock_stage",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

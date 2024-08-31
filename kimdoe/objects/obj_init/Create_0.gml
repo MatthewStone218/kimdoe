@@ -21,6 +21,19 @@ global.cell_width = 100;
 
 global.state = ST.MAIN;
 
+ini_open("save.ini");
+
+global.cleared_stage = ini_read_real("system","cleared_stage",0);
+
+ini_close();
+
+global.stage_arr =
+[
+	[rm_prologue,ST.DIALOGUE,"프롤로그"],
+	[rm_stage_1,ST.GAME,"첫 모근"],
+	[rm_stage_2,ST.GAME,"두번째 모근"]
+]
+
 scr_live_set_auto()
 
 randomize();
@@ -30,7 +43,9 @@ room_goto(val_room_start);
 enum ST
 {
 	MAIN,
+	STAGE_SELECTION,
 	PAUSE,
+	DIALOGUE,
 	GAME,
 	MOVING
 }

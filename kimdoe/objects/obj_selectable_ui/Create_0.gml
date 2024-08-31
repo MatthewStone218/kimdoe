@@ -4,13 +4,13 @@
 focused = false;
 
 register_click_func(
-	function(){ return focused },
+	function(){ return global.state == my_state && focused },
 	function()
 	{
-		if(input_check("ok")){ ok(); }
-		else if(input_check("left")){ if(instance_exists(navigation.left)){ navigation.left.focused = true; focused = false; } }
-		else if(input_check("right")){ if(instance_exists(navigation.right)){ navigation.right.focused = true; focused = false; } }
-		else if(input_check("up")){ if(instance_exists(navigation.up)){ navigation.up.focused = true; focused = false; } }
-		else if(input_check("down")){ if(instance_exists(navigation.down)){ navigation.down.focused = true; focused = false; } }
+		if(input_check_pressed("ok")){ ok(); }
+		else if(input_check_pressed("left")){ if(instance_exists(navigation.left)){ navigation.left.focused = true; navigation.left.focus(); lose_focus(); focused = false; } }
+		else if(input_check_pressed("right")){ if(instance_exists(navigation.right)){ navigation.right.focused = true; navigation.right.focus(); lose_focus(); focused = false; } }
+		else if(input_check_pressed("up")){ if(instance_exists(navigation.up)){ navigation.up.focused = true; navigation.up.focus(); lose_focus(); focused = false; } }
+		else if(input_check_pressed("down")){ if(instance_exists(navigation.down)){ navigation.down.focused = true; navigation.down.focus(); lose_focus(); focused = false; } }
 	}
 );

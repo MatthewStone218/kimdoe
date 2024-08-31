@@ -8,7 +8,11 @@ if(step == 1)
 else
 {
 	image_alpha -= 0.08;
-	if(image_alpha <= 0){instance_destroy();}
+	if(image_alpha <= 0)
+	{
+		global.state = next_state;
+		instance_destroy();
+	}
 }
 
 x = CM_X;
