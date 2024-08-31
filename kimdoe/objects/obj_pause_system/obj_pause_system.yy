@@ -8,8 +8,8 @@
   "name":"obj_pause_system",
   "overriddenProperties":[],
   "parent":{
-    "name":"system",
-    "path":"folders/Objects/system.yy",
+    "name":"pause",
+    "path":"folders/Objects/pause.yy",
   },
   "parentObjectId":null,
   "persistent":true,

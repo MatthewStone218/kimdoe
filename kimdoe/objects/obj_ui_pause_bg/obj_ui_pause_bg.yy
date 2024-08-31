@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ui_pause_resume",
+  "%Name":"obj_ui_pause_bg",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ui_pause_resume",
+  "name":"obj_ui_pause_bg",
   "overriddenProperties":[],
   "parent":{
     "name":"pause",
     "path":"folders/Objects/pause.yy",
   },
-  "parentObjectId":{
-    "name":"obj_selectable_ui_1",
-    "path":"objects/obj_selectable_ui_1/obj_selectable_ui_1.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ui_stage_selection",
-    "path":"sprites/spr_ui_stage_selection/spr_ui_stage_selection.yy",
+    "name":"spr_black_dot",
+    "path":"sprites/spr_black_dot/spr_black_dot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

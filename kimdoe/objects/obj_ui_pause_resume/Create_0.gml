@@ -13,7 +13,7 @@ navigation =
 	left: noone,
 	right: noone,
 	up: noone,
-	down: obj_ui_qause_goto_main
+	down: obj_ui_pause_goto_main
 }
 
 function ok()
