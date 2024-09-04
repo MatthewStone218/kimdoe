@@ -3,7 +3,7 @@
 
 if(action_time < 1)
 {
-	action_time += 0.15;
+	action_time += 0.05;
 	
 	if(action_time >= 1)
 	{
@@ -24,3 +24,5 @@ if(action == "kicked")
 }
 
 bib = max(0,bib-4);
+
+depth = -y;
