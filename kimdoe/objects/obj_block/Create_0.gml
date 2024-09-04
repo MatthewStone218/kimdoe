@@ -19,6 +19,7 @@ bib = 0;
 
 function kicked(dir)
 {	
+	instance_create_depth(x,y,depth+1,obj_ef_move);
 	switch(dir)
 	{
 		case "left":

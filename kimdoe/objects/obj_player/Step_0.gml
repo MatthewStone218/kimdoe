@@ -72,7 +72,7 @@ if(global.state == ST.GAME)
 			}
 			else if(!position_meeting(x-global.cell_width,y,obj_sol))
 			{
-				instance_create_depth(x,y,depth-1000,obj_ef_move);
+				instance_create_depth(x,y,depth,obj_ef_move);
 				dir = "left";
 				action = "move";
 				action_time = 0;
@@ -99,7 +99,7 @@ if(global.state == ST.GAME)
 			}
 			else if(!position_meeting(x+global.cell_width,y,obj_sol))
 			{
-				instance_create_depth(x,y,depth-1000,obj_ef_move);
+				instance_create_depth(x,y,depth,obj_ef_move);
 				dir = "right";
 				action = "move";
 				action_time = 0;
@@ -126,7 +126,7 @@ if(global.state == ST.GAME)
 			}
 			else if(!position_meeting(x,y-global.cell_width,obj_sol))
 			{
-				instance_create_depth(x,y,depth-1000,obj_ef_move);
+				instance_create_depth(x,y,depth,obj_ef_move);
 				dir = "up";
 				action = "move";
 				action_time = 0;
@@ -153,7 +153,7 @@ if(global.state == ST.GAME)
 			}
 			else if(!position_meeting(x,y+global.cell_width,obj_sol))
 			{
-				instance_create_depth(x,y,depth-1000,obj_ef_move);
+				instance_create_depth(x,y,depth,obj_ef_move);
 				dir = "down";
 				action = "move";
 				action_time = 0;
