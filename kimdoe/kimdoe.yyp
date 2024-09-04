@@ -603,7 +603,6 @@
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_dialogue_player_1","path":"sprites/spr_dialogue_player_1/spr_dialogue_player_1.yy",},},
     {"id":{"name":"spr_ef_item","path":"sprites/spr_ef_item/spr_ef_item.yy",},},
-    {"id":{"name":"spr_ef_kick_1","path":"sprites/spr_ef_kick_1/spr_ef_kick_1.yy",},},
     {"id":{"name":"spr_ef_kick","path":"sprites/spr_ef_kick/spr_ef_kick.yy",},},
     {"id":{"name":"spr_ef_move","path":"sprites/spr_ef_move/spr_ef_move.yy",},},
     {"id":{"name":"spr_ef_player_die","path":"sprites/spr_ef_player_die/spr_ef_player_die.yy",},},
