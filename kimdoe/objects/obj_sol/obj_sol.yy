@@ -35,5 +35,5 @@
     "path":"sprites/spr_sol/spr_sol.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
