@@ -19,3 +19,38 @@ function set_position()
 	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
 	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
 }
+
+function create_hair()
+{
+	if(instance_exists(obj_hair))
+	{
+		with(obj_hair)
+		{
+			if(child == noone)
+			{
+				var _inst = instance_create_depth(x,y,depth,obj_hair);
+				_inst.parent = id;
+				child = _inst;
+				break;
+			}
+		}
+	}
+	else
+	{
+		var _inst = instance_create_depth(x,y,depth,obj_hair);
+		_inst.parent = id;
+		child = _inst;
+	}
+}
+
+function pull_hair()
+{
+	with(obj_hair)
+	{
+		if(child == noone)
+		{
+			follow();
+			break;
+		}
+	}
+}

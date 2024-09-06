@@ -81,6 +81,16 @@ if(global.state == ST.GAME)
 				x_goal = x-global.cell_width;
 				sprite_index = spr_player_move_left;
 				image_index = 0;
+				
+				if(position_meeting(x-global.cell_width,y,obj_item))
+				{
+					with(instance_place(x-global.cell_width,y,obj_item))
+					{
+						gain();
+					}
+				}
+				
+				pull_hair();
 			}
 		}
 		else if(action_input == "right")
@@ -108,6 +118,16 @@ if(global.state == ST.GAME)
 				x_goal = x+global.cell_width;
 				sprite_index = spr_player_move_right;
 				image_index = 0;
+				
+				if(position_meeting(x+global.cell_width,y,obj_item))
+				{
+					with(instance_place(x+global.cell_width,y,obj_item))
+					{
+						gain();
+					}
+				}
+				
+				pull_hair();
 			}
 		}
 		else if(action_input == "up")
@@ -135,6 +155,16 @@ if(global.state == ST.GAME)
 				y_goal = y-global.cell_width;
 				sprite_index = spr_player_move_up;
 				image_index = 0;
+				
+				if(position_meeting(x,y-global.cell_width,obj_item))
+				{
+					with(instance_place(x,y-global.cell_width,obj_item))
+					{
+						gain();
+					}
+				}
+				
+				pull_hair();
 			}
 		}
 		else if(action_input == "down")
@@ -162,6 +192,16 @@ if(global.state == ST.GAME)
 				y_goal = y+global.cell_width;
 				sprite_index = spr_player_move_down;
 				image_index = 0;
+				
+				if(position_meeting(x,y+global.cell_width,obj_item))
+				{
+					with(instance_place(x,y+global.cell_width,obj_item))
+					{
+						gain();
+					}
+				}
+				
+				pull_hair();
 			}
 		}
 	}

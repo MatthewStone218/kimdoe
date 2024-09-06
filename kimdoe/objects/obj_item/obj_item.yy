@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_hair",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_item",
+  "eventList":[],
   "managed":true,
-  "name":"obj_item_hair",
+  "name":"obj_item",
   "overriddenProperties":[],
   "parent":{
     "name":"game",
     "path":"folders/Objects/game.yy",
   },
-  "parentObjectId":{
-    "name":"obj_item",
-    "path":"objects/obj_item/obj_item.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_item_hair",
-    "path":"sprites/spr_item_hair/spr_item_hair.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
