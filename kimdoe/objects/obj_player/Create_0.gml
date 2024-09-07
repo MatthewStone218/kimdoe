@@ -117,3 +117,8 @@ function kick(xx,yy,_dir)
 	
 	image_index = 0;
 }
+
+function set_hair_pos()
+{
+
+}

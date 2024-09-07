@@ -13,3 +13,5 @@ if(move_time < 1)
 
 hair_x = ease_get_val(ease_out_cubic(move_time),x_prev,x_goal);
 hair_y = ease_get_val(ease_out_cubic(move_time),y_prev,y_goal);
+
+depth = -y+1;
