@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"get_hair_radius",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_hair_radius",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
