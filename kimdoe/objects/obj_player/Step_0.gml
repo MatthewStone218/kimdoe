@@ -489,7 +489,6 @@ switch(sprite_index)
 		}
 	break;
 	case spr_player_kick_up:
-		action_time = 0.0;
 		if(image_index < 1)
 		{
 			hair_x = x-2;
@@ -513,42 +512,42 @@ switch(sprite_index)
 		else if(image_index < 5)
 		{
 			hair_x = x-2;
-			hair_y = y-60;
+			hair_y = y-45;
 		}
 		else if(image_index < 6)
 		{
 			hair_x = x-2;
-			hair_y = y-65;
+			hair_y = y-60;
 		}
 		else if(image_index < 7)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-60;
 		}
 		else if(image_index < 8)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-60;
 		}
 		else if(image_index < 9)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-65;
 		}
 		else if(image_index < 10)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-65;
 		}
 		else if(image_index < 11)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-65;
 		}
 		else if(image_index < 12)
 		{
 			hair_x = x-2;
-			hair_y = y-70;
+			hair_y = y-65;
 		}
 	break;
 }
