@@ -19,88 +19,53 @@ bib = 0;
 
 function kicked(dir)
 {	
-	instance_create_depth(x,y,depth+1,obj_ef_move);
 	switch(dir)
 	{
 		case "left":
-			if(position_meeting(x-global.cell_width,y,obj_blocks))
-			{
-				bib = 25;
-			}
-			else
-			{
-				action = "kicked";
-				action_time = 0;
-	
-				x_prev = x;
-				y_prev = y;
-				
-				x -= global.cell_width;
-	
-				x_goal = x;
-				y_goal = y;
-			}
+			xx = x-global.cell_width;
+			yy = y;
 		break;
-		
 		case "right":
-			if(position_meeting(x+global.cell_width,y,obj_blocks))
-			{
-				bib = 25;
-			}
-			else
-			{
-				action = "kicked";
-				action_time = 0;
-	
-				x_prev = x;
-				y_prev = y;
-				
-				x += global.cell_width;
-	
-				x_goal = x;
-				y_goal = y;
-			}
+			xx = x+global.cell_width;
+			yy = y;
 		break;
-		
 		case "up":
-			if(position_meeting(x,y-global.cell_width,obj_blocks))
-			{
-				bib = 25;
-			}
-			else
-			{
-				action = "kicked";
-				action_time = 0;
-	
-				x_prev = x;
-				y_prev = y;
-				
-				y -= global.cell_width;
-	
-				x_goal = x;
-				y_goal = y;
-			}
+			xx = x;
+			yy = y-global.cell_width;
 		break;
-		
 		case "down":
-			if(position_meeting(x,y+global.cell_width,obj_blocks))
-			{
-				bib = 25;
-			}
-			else
-			{
-				action = "kicked";
-				action_time = 0;
-	
-				x_prev = x;
-				y_prev = y;
-				
-				y += global.cell_width;
-	
-				x_goal = x;
-				y_goal = y;
-			}
+			xx = x;
+			yy = y+global.cell_width;
 		break;
+	}
+	
+	instance_create_depth(x,y,depth+1,obj_ef_move);
+	if(position_meeting(xx,yy,obj_blocks))
+	{
+		bib = 25;
+	}
+	else
+	{
+		action = "kicked";
+		action_time = 0;
+	
+		x_prev = x;
+		y_prev = y;
+				
+		x = xx;
+		y = yy;
+	
+		x_goal = x;
+		y_goal = y;
+	}
+	
+	if(position_meeting(xx,yy,obj_hair))
+	{
+		global.state = ST.DYING;
+		with(instance_place(xx,yy,obj_hair))
+		{
+			die(true);
+		}
 	}
 }
 
