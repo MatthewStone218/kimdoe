@@ -12,6 +12,34 @@ y_prev = y;
 x_goal = x;
 y_goal = y;
 
+function die(chain_parent)
+{
+	repeat(60)
+	{
+		instance_create_depth(x+random_range(-20,20),y+random_range(-20,20),depth,obj_ef_hair_die);
+	}
+	
+	if(child != noone)
+	{
+		with(child)
+		{
+			die(false);
+		}
+	}
+	
+	if(chain_parent)
+	{
+		parent.set_death_timer(10);
+	}
+	
+	instance_destroy();
+}
+
+function set_death_timer(frame)
+{
+	alarm[0] = frame;
+}
+
 function follow()
 {
 	move_time = 0;

@@ -47,5 +47,6 @@ enum ST
 	PAUSE,
 	DIALOGUE,
 	GAME,
-	MOVING
+	MOVING,
+	DYING
 }

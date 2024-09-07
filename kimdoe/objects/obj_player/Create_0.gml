@@ -6,6 +6,9 @@ action_time = 1;
 action = "none";
 action_input = "none";
 
+s_x = x;
+s_y = y;
+
 x_prev = x;
 y_prev = y;
 
@@ -18,10 +21,20 @@ hair_index = 0;
 hair_x = x;
 hair_y = y;
 
+function die()
+{
+	
+}
+
+function set_death_timer(frame)
+{
+	alarm[0] = frame;
+}
+
 function set_position()
 {
-	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
-	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
+	s_x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
+	s_y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
 }
 
 function gain_hair()
@@ -74,6 +87,8 @@ function move(xx,yy,_dir)
 	action_time = 0;
 	x_prev = x;
 	y_prev = y;
+	s_x = x;
+	s_y = y;
 	x_goal = xx;
 	y_goal = yy;
 	
@@ -96,6 +111,18 @@ function move(xx,yy,_dir)
 	}
 				
 	pull_hair();
+	
+	x = xx;
+	y = yy;
+	
+	if(position_meeting(xx,yy,obj_hair))
+	{
+		global.state = ST.DYING;
+		with(instance_place(xx,yy,obj_hair))
+		{
+			die(true);
+		}
+	}
 }
 
 function kick(xx,yy,_dir)
@@ -120,5 +147,444 @@ function kick(xx,yy,_dir)
 
 function set_hair_pos()
 {
+	hair_x = s_x;
+	hair_y = s_y-62;
 
+	switch(sprite_index)
+	{
+		case spr_player_idle_down:
+			if(image_index < 1)
+			{
+				hair_x = s_x-3;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x+3;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x+3;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(sprite_index < 9)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x-3;
+				hair_y = s_y-70;
+			}
+		break;
+		case spr_player_idle_up:
+			if(image_index < 1)
+			{
+				hair_x = s_x;
+				hair_y = s_y-62;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x;
+				hair_y = s_y-55;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+		break;
+		case spr_player_idle_right:
+			if(image_index < 1)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x-4;
+				hair_y = s_y-73;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x-6;
+				hair_y = s_y-75;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x-12;
+				hair_y = s_y-73;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x-10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x-3;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x-5;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x-10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x-13;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x-10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+		break;
+		case spr_player_idle_left:
+			if(image_index < 1)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x+4;
+				hair_y = s_y-73;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x+6;
+				hair_y = s_y-75;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x+12;
+				hair_y = s_y-73;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x+10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x+3;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x+5;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x+10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x+13;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x+10;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+		break;
+		case spr_player_kick_left:
+			if(image_index < 1)
+			{
+				hair_x = s_x+15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x+15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x+15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x+15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x+12;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x+3;
+				hair_y = s_y-65;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x+14;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x+5;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x+2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+		break;
+		case spr_player_kick_right:
+			if(image_index < 1)
+			{
+				hair_x = s_x-15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x-15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x-15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x-15;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x-12;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x-3;
+				hair_y = s_y-65;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x-14;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x-5;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-70;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x;
+				hair_y = s_y-70;
+			}
+		break;
+		case spr_player_kick_up:
+			if(image_index < 1)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-45;
+			}
+			else if(image_index < 2)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-45;
+			}
+			else if(image_index < 3)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-45;
+			}
+			else if(image_index < 4)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-45;
+			}
+			else if(image_index < 5)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-45;
+			}
+			else if(image_index < 6)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 7)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 8)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-60;
+			}
+			else if(image_index < 9)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-65;
+			}
+			else if(image_index < 10)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-65;
+			}
+			else if(image_index < 11)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-65;
+			}
+			else if(image_index < 12)
+			{
+				hair_x = s_x-2;
+				hair_y = s_y-65;
+			}
+		break;
+	}
 }
