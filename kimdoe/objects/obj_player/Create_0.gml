@@ -30,6 +30,26 @@ function die()
 	}
 }
 
+function kill_self()
+{
+	global.state = ST.DYING;
+	
+	if(instance_exists(obj_hair))
+	{
+		with(obj_hair)
+		{
+			if(child == noone)
+			{
+				die(true);
+			}
+		}
+	}
+	else
+	{
+		die();
+	}
+}
+
 function set_death_timer(frame)
 {
 	alarm[0] = frame;

@@ -21,9 +21,9 @@ function __input_config_verbs()
             right: [input_binding_key(vk_right), input_binding_key("D")],
             
             ok:  [input_binding_key(vk_space), input_binding_key(vk_enter)],
+			restart: input_binding_key("R"),
             cancel:  input_binding_key(vk_backspace),
             action_input:  input_binding_key(vk_enter),
-            special: input_binding_key(vk_shift),
             
             //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
             shoot: input_binding_mouse_button(mb_left),
@@ -38,10 +38,10 @@ function __input_config_verbs()
             left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
             right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
             
-            accept:  input_binding_gamepad_button(gp_face1),
+            ok:  input_binding_gamepad_button(gp_face1),
+			restart: input_binding_gamepad_button(gp_face4),
             cancel:  input_binding_gamepad_button(gp_face2),
             action_input:  input_binding_gamepad_button(gp_face3),
-            special: input_binding_gamepad_button(gp_face4),
             
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),

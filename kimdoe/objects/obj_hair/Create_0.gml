@@ -69,7 +69,7 @@ function draw_hair()
 		
 		for(var i = 1; i <= _accuracy; i++)
 		{
-			var _pos = get_bezier_pos(i/_accuracy,hair_x,hair_y,parent.hair_x,parent.hair_y+50,parent.hair_x,parent.hair_y);
+			var _pos = get_bezier_pos(i/_accuracy,hair_x,hair_y,parent.hair_x,parent.hair_y+30,parent.hair_x,parent.hair_y);
 			var _radius_1 = (get_hair_radius(0)-get_hair_radius(1))*(i-1)/_accuracy + get_hair_radius(1);
 			var _radius_2 = (get_hair_radius(0)-get_hair_radius(1))*i/_accuracy + get_hair_radius(1);
 			

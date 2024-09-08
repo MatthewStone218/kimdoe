@@ -34,7 +34,11 @@ if(action == "move")
 
 if(global.state == ST.GAME)
 {
-	if(action_input == "none")
+	if(input_check_pressed("restart"))
+	{
+		kill_self();
+	}
+	else if(action_input == "none")
 	{
 		if(input_check_pressed("left"))
 		{
