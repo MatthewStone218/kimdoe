@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ef_item",
+  "%Name":"obj_ef_player_die",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ef_item",
+  "name":"obj_ef_player_die",
   "overriddenProperties":[],
   "parent":{
     "name":"ef",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ef_item",
-    "path":"sprites/spr_ef_item/spr_ef_item.yy",
+    "name":"spr_ef_player_die",
+    "path":"sprites/spr_ef_player_die/spr_ef_player_die.yy",
   },
   "spriteMaskId":null,
   "visible":true,

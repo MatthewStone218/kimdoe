@@ -9,8 +9,8 @@
   "name":"obj_ef_kick",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"ef",
+    "path":"folders/Objects/game/ef.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -23,7 +23,11 @@ hair_y = y;
 
 function die()
 {
-	
+	if(global.state == ST.DYING)
+	{
+		global.state = ST.MOVING;
+		instance_create_depth(x,y,-10000,obj_ef_player_die);
+	}
 }
 
 function set_death_timer(frame)
