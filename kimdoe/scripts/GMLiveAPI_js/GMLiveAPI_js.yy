@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"GMLiveAPI_js",
   "isCompatibility":false,
   "isDnD":false,

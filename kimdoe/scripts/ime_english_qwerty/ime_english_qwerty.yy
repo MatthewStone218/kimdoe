@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"ime_english_qwerty",
   "isCompatibility":false,
   "isDnD":false,

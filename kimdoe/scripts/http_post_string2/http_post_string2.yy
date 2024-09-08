@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"http_post_string2",
   "isCompatibility":false,
   "isDnD":false,

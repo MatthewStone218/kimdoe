@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"obj_pillar_2",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_pillar_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"pillar",
-    "path":"folders/Objects/game/pillar.yy",
+    "name":"objs",
+    "path":"folders/Objects/game/objs.yy",
   },
   "parentObjectId":{
-    "name":"obj_pillar",
-    "path":"objects/obj_pillar/obj_pillar.yy",
+    "name":"obj_objs",
+    "path":"objects/obj_objs/obj_objs.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

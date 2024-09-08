@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"ime_hangul_2",
   "isCompatibility":false,
   "isDnD":false,

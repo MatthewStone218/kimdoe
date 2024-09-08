@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"draw_sprite_box",
   "isCompatibility":false,
   "isDnD":false,

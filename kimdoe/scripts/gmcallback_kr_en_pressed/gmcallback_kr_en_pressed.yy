@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"gmcallback_kr_en_pressed",
   "isCompatibility":false,
   "isDnD":false,

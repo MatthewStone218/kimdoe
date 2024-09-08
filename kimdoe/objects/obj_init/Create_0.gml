@@ -17,7 +17,7 @@ global.shift_pressing = 0;
 global.keyboard_kr = 1;
 global.keyboard_visible = 0;
 
-global.cell_width = 100;
+global.cell_width = 64;
 
 global.state = ST.MAIN;
 

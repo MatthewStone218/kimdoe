@@ -12,19 +12,19 @@ dialogue =
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
-		text: "이루기 쉬운 꿈은 아니었지만,\n충분히 도전할 가치가 있어보입니다.",
+		text: "그 잠깐의 영광은 며칠간 잊히지 않고 당신의 머리를 맴돌았습니다.",
 		next_struct: function(){ return obj_prologue_dialogue.dialogue[2]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
-		text: "당신은 지옥에서 기다리고 있는\n당신의 모근(이었던 것)을 되찾기로 합니다.",
+		text: "당신은 결국 지옥에 쳐들어가 죽어버린 모근들을 되찾아오기로 결심했습니다.",
 		next_struct: function(){ return obj_prologue_dialogue.dialogue[3]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
-		text: "\"기다려라, 모근 하렘이여.\"\n이렇게 당신의 모험이 시작되었습니다.",
+		text: "이렇게 당신의 모험이 시작됩니다...!",
 		next_struct: function(){ return obj_prologue_dialogue.dialogue[4]; }
 	},
 	{

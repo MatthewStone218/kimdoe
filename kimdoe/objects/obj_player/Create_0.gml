@@ -148,442 +148,442 @@ function kick(xx,yy,_dir)
 function set_hair_pos()
 {
 	hair_x = s_x;
-	hair_y = s_y-62;
+	hair_y = s_y-31;
 
 	switch(sprite_index)
 	{
 		case spr_player_idle_down:
 			if(image_index < 1)
 			{
-				hair_x = s_x-3;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 3)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 4)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x+3;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 7)
 			{
-				hair_x = s_x+3;
-				hair_y = s_y-70;
+				hair_x = s_x+2;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 8)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(sprite_index < 9)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 10)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 11)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 12)
 			{
-				hair_x = s_x-3;
-				hair_y = s_y-70;
+				hair_x = s_x-2;
+				hair_y = s_y-35;
 			}
 		break;
 		case spr_player_idle_up:
 			if(image_index < 1)
 			{
 				hair_x = s_x;
-				hair_y = s_y-62;
+				hair_y = s_y-31;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-55;
+				hair_x = s_x-1;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-55;
+				hair_x = s_x-1;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 4)
 			{
 				hair_x = s_x;
-				hair_y = s_y-55;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-60;
+				hair_x = s_x+1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 6)
 			{
 				hair_x = s_x;
-				hair_y = s_y-60;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 7)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-55;
+				hair_x = s_x+1;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 9)
 			{
 				hair_x = s_x;
-				hair_y = s_y-55;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 10)
 			{
 				hair_x = s_x;
-				hair_y = s_y-55;
+				hair_y = s_y-27;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 12)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 		break;
 		case spr_player_idle_right:
 			if(image_index < 1)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x-4;
-				hair_y = s_y-73;
+				hair_x = s_x-2;
+				hair_y = s_y-36;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x-6;
-				hair_y = s_y-75;
+				hair_x = s_x-3;
+				hair_y = s_y-37;
 			}
 			else if(image_index < 4)
 			{
-				hair_x = s_x-12;
-				hair_y = s_y-73;
+				hair_x = s_x-6;
+				hair_y = s_y-36;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x-10;
-				hair_y = s_y-70;
+				hair_x = s_x-5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x-3;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 7)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x-5;
-				hair_y = s_y-70;
+				hair_x = s_x-2;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 9)
 			{
-				hair_x = s_x-10;
-				hair_y = s_y-70;
+				hair_x = s_x-5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 10)
 			{
-				hair_x = s_x-13;
-				hair_y = s_y-70;
+				hair_x = s_x-6;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x-10;
-				hair_y = s_y-70;
+				hair_x = s_x-5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 12)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 		break;
 		case spr_player_idle_left:
 			if(image_index < 1)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x+4;
-				hair_y = s_y-73;
+				hair_x = s_x+2;
+				hair_y = s_y-36;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x+6;
-				hair_y = s_y-75;
+				hair_x = s_x+3;
+				hair_y = s_y-37;
 			}
 			else if(image_index < 4)
 			{
-				hair_x = s_x+12;
-				hair_y = s_y-73;
+				hair_x = s_x+6;
+				hair_y = s_y-36;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x+10;
-				hair_y = s_y-70;
+				hair_x = s_x+5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x+3;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 7)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x+5;
-				hair_y = s_y-70;
+				hair_x = s_x+2;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 9)
 			{
-				hair_x = s_x+10;
-				hair_y = s_y-70;
+				hair_x = s_x+5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 10)
 			{
-				hair_x = s_x+13;
-				hair_y = s_y-70;
+				hair_x = s_x+6;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x+10;
-				hair_y = s_y-70;
+				hair_x = s_x+5;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 12)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 		break;
 		case spr_player_kick_left:
 			if(image_index < 1)
 			{
-				hair_x = s_x+15;
-				hair_y = s_y-60;
+				hair_x = s_x+7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x+15;
-				hair_y = s_y-60;
+				hair_x = s_x+7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x+15;
-				hair_y = s_y-60;
+				hair_x = s_x+7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 4)
 			{
-				hair_x = s_x+15;
-				hair_y = s_y-60;
+				hair_x = s_x+7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x+12;
-				hair_y = s_y-60;
+				hair_x = s_x+6;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x+3;
-				hair_y = s_y-65;
+				hair_x = s_x+1;
+				hair_y = s_y-32;
 			}
 			else if(image_index < 7)
 			{
-				hair_x = s_x+14;
-				hair_y = s_y-70;
+				hair_x = s_x+7;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x+5;
-				hair_y = s_y-70;
+				hair_x = s_x+2;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 9)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 10)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x+2;
-				hair_y = s_y-70;
+				hair_x = s_x+1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 12)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 		break;
 		case spr_player_kick_right:
 			if(image_index < 1)
 			{
-				hair_x = s_x-15;
-				hair_y = s_y-60;
+				hair_x = s_x-7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x-15;
-				hair_y = s_y-60;
+				hair_x = s_x-7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x-15;
-				hair_y = s_y-60;
+				hair_x = s_x-7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 4)
 			{
-				hair_x = s_x-15;
-				hair_y = s_y-60;
+				hair_x = s_x-7;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x-12;
-				hair_y = s_y-60;
+				hair_x = s_x-6;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x-3;
-				hair_y = s_y-65;
+				hair_x = s_x-1;
+				hair_y = s_y-32;
 			}
 			else if(image_index < 7)
 			{
-				hair_x = s_x-14;
-				hair_y = s_y-70;
+				hair_x = s_x-7;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x-5;
-				hair_y = s_y-70;
+				hair_x = s_x-2;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 9)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 10)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-70;
+				hair_x = s_x-1;
+				hair_y = s_y-35;
 			}
 			else if(image_index < 12)
 			{
 				hair_x = s_x;
-				hair_y = s_y-70;
+				hair_y = s_y-35;
 			}
 		break;
 		case spr_player_kick_up:
 			if(image_index < 1)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-45;
+				hair_x = s_x-1;
+				hair_y = s_y-22;
 			}
 			else if(image_index < 2)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-45;
+				hair_x = s_x-1;
+				hair_y = s_y-22;
 			}
 			else if(image_index < 3)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-45;
+				hair_x = s_x-1;
+				hair_y = s_y-22;
 			}
 			else if(image_index < 4)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-45;
+				hair_x = s_x-1;
+				hair_y = s_y-22;
 			}
 			else if(image_index < 5)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-45;
+				hair_x = s_x-1;
+				hair_y = s_y-22;
 			}
 			else if(image_index < 6)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 7)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 8)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-60;
+				hair_x = s_x-1;
+				hair_y = s_y-30;
 			}
 			else if(image_index < 9)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-65;
+				hair_x = s_x-1;
+				hair_y = s_y-32;
 			}
 			else if(image_index < 10)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-65;
+				hair_x = s_x-1;
+				hair_y = s_y-32;
 			}
 			else if(image_index < 11)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-65;
+				hair_x = s_x-1;
+				hair_y = s_y-32;
 			}
 			else if(image_index < 12)
 			{
-				hair_x = s_x-2;
-				hair_y = s_y-65;
+				hair_x = s_x-1;
+				hair_y = s_y-32;
 			}
 		break;
 	}

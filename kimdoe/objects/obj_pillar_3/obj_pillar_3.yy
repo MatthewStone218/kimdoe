@@ -8,12 +8,12 @@
   "name":"obj_pillar_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"pillar",
-    "path":"folders/Objects/game/pillar.yy",
+    "name":"objs",
+    "path":"folders/Objects/game/objs.yy",
   },
   "parentObjectId":{
-    "name":"obj_pillar",
-    "path":"objects/obj_pillar/obj_pillar.yy",
+    "name":"obj_objs",
+    "path":"objects/obj_objs/obj_objs.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

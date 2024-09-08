@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"scr_live_set_auto",
   "isCompatibility":false,
   "isDnD":false,

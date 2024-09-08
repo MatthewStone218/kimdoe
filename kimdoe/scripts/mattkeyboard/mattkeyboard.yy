@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"mattkeyboard",
   "isCompatibility":false,
   "isDnD":false,
