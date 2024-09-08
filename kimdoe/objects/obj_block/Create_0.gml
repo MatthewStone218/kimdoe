@@ -62,6 +62,7 @@ function kicked(dir)
 	if(position_meeting(xx,yy,obj_hair))
 	{
 		global.state = ST.DYING;
+		instance_create_depth(obj_player.x,obj_player.y,-10000,obj_ef_player_die);
 		with(instance_place(xx,yy,obj_hair))
 		{
 			die(true);

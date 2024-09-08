@@ -24,15 +24,20 @@ hair_y = y;
 function die()
 {
 	if(global.state == ST.DYING)
-	{
+	{	
 		global.state = ST.MOVING;
-		instance_create_depth(x,y,-10000,obj_ef_player_die);
+		repeat(300)
+		{
+			instance_create_depth(x,y,-10020,obj_ef_hair_die_2);
+		}
 	}
 }
 
 function kill_self()
 {
 	global.state = ST.DYING;
+	
+	instance_create_depth(x,y,-10000,obj_ef_player_die);
 	
 	if(instance_exists(obj_hair))
 	{
@@ -146,6 +151,7 @@ function move(xx,yy,_dir)
 		{
 			die(true);
 		}
+		instance_create_depth(x,y,-10000,obj_ef_player_die);
 	}
 }
 

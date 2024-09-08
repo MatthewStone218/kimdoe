@@ -14,7 +14,7 @@ y_goal = y;
 
 function die(chain_parent)
 {
-	repeat(60)
+	repeat(100)
 	{
 		instance_create_depth(x+random_range(-20,20),y+random_range(-20,20),depth,obj_ef_hair_die);
 	}
@@ -29,7 +29,7 @@ function die(chain_parent)
 	
 	if(chain_parent)
 	{
-		parent.set_death_timer(10);
+		parent.set_death_timer(5);
 	}
 	
 	instance_destroy();
@@ -58,7 +58,15 @@ function follow()
 
 function draw_hair()
 {
-	draw_set_color(c_black);
+	if(global.state == ST.DYING)
+	{
+		draw_set_color(c_white);
+	}
+	else
+	{
+		draw_set_color(c_black);
+	}
+	
 	draw_set_alpha(1);
 	
 	if(parent.hair_index == 0)

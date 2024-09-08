@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ef_player_die",
+  "%Name":"obj_ef_hair_die_2",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ef_player_die",
+  "name":"obj_ef_hair_die_2",
   "overriddenProperties":[],
   "parent":{
     "name":"ef",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ef_player_die",
-    "path":"sprites/spr_ef_player_die/spr_ef_player_die.yy",
+    "name":"spr_ef_hair_die",
+    "path":"sprites/spr_ef_hair_die/spr_ef_hair_die.yy",
   },
   "spriteMaskId":null,
   "visible":true,
