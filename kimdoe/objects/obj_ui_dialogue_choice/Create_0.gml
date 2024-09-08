@@ -17,4 +17,5 @@ navigation =
 function ok()
 {
 	my_func();
+	instance_destroy(obj_ui_dialogue_choice);
 }

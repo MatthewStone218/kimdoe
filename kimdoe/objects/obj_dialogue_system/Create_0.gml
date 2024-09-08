@@ -70,6 +70,13 @@ function set_dialogue(struct)
 	}
 }
 
+function kill_dialogue()
+{
+	obj_ui_dialogue_bg_1.die = true;
+	obj_ui_dialogue_bg_2.die = true;
+	obj_ui_dialogue_bg_3.die = true;
+}
+
 function clean_dialogue()
 {
 	instance_destroy(obj_ui_dialogue_text);

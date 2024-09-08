@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ui_dialogue_bg_1",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_npc",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ui_dialogue_bg_1",
+  "name":"obj_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"dialogue",
-    "path":"folders/Objects/dialogue.yy",
+    "name":"npc",
+    "path":"folders/Objects/game/npc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ui_dialogue_bg_2",
-    "path":"sprites/spr_ui_dialogue_bg_2/spr_ui_dialogue_bg_2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

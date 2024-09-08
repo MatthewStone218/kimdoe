@@ -153,6 +153,14 @@ function move(xx,yy,_dir)
 		}
 		instance_create_depth(x,y,-10000,obj_ef_player_die);
 	}
+	
+	with(obj_npc)
+	{
+		if(position_meeting(x-global.cell_width,y,obj_player) or position_meeting(x+global.cell_width,y,obj_player) or position_meeting(x,y-global.cell_width,obj_player) or position_meeting(x,y+global.cell_width,obj_player))
+		{
+			interact();
+		}
+	}
 }
 
 function kick(xx,yy,_dir)
