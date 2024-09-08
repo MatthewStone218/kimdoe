@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_rock_1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_rock_1",
   "overriddenProperties":[],
@@ -9,10 +11,7 @@
     "name":"objs",
     "path":"folders/Objects/game/objs.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objs",
-    "path":"objects/obj_objs/obj_objs.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
