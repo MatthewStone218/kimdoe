@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+depth = -750;
+
 text = "메인으로";
 
 my_state = ST.PAUSE;

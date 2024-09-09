@@ -3,7 +3,7 @@
 function unlock_stage(num){
 	ini_open("save.ini");
 
-	ini_write_real("system","cleared_stage",num);
+	ini_write_real("system","cleared_stage",max(num, ini_read_real("system","cleared_stage",0)));
 
 	ini_close();
 }

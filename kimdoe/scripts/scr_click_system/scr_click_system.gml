@@ -43,7 +43,7 @@ function click_system_step()
 	for(var i = 0; i < array_length(global.__click_system_funcs__); i++)
 	{
 		if(global.__click_system_funcs__[i][0]())
-		{
+		{show_debug_message(object_get_name(method_get_self(global.__click_system_funcs__[i][1]).object_index))
 			global.__click_system_funcs__[i][1]();
 			break;
 		}

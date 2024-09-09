@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+depth = -750;
+
 my_state = ST.PAUSE;
 
 text = "계속";
