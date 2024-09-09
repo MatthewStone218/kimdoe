@@ -9,9 +9,9 @@ function set_dialogue(struct)
 	if(global.state != ST.DIALOGUE)
 	{
 		global.state = ST.DIALOGUE;
-		instance_create_depth(0,0,-4000,obj_ui_dialogue_bg_1);
-		instance_create_depth(0,0,-4100,obj_ui_dialogue_bg_2);
-		instance_create_depth(0,0,-4500,obj_ui_dialogue_bg_3);
+		instance_create_depth(0,0,-400,obj_ui_dialogue_bg_1);
+		instance_create_depth(0,0,-410,obj_ui_dialogue_bg_2);
+		instance_create_depth(0,0,-450,obj_ui_dialogue_bg_3);
 	}
 
 	instance_destroy(obj_ui_dialogue_text);
@@ -28,7 +28,7 @@ function set_dialogue(struct)
 				_spr = sprite_index;
 			}
 			
-			if(_spr != struct_now.image){instance_create_depth(960,540,-4400,obj_ui_dialogue_character,{sprite_index: struct_now.image});}
+			if(_spr != struct_now.image){instance_create_depth(960,540,-440,obj_ui_dialogue_character,{sprite_index: struct_now.image});}
 		}
 		else
 		{
@@ -40,12 +40,12 @@ function set_dialogue(struct)
 		
 		if(variable_struct_exists(struct_now,"name"))
 		{
-			instance_create_depth(960,720,-4800,obj_ui_dialogue_name,{text: struct_now.name});
+			instance_create_depth(960,720,-480,obj_ui_dialogue_name,{text: struct_now.name});
 		}
 		
 		if(struct_now.type == "text")
 		{
-			instance_create_depth(960,900,-4800,obj_ui_dialogue_text,{text: struct_now.text});
+			instance_create_depth(960,900,-480,obj_ui_dialogue_text,{text: struct_now.text});
 		}
 		else if(struct_now.type == "choice")
 		{
@@ -53,7 +53,7 @@ function set_dialogue(struct)
 
 			for(var i = 0; i < array_length(struct_now.choice); i++)
 			{
-				var _inst = instance_create_depth(960,540-(array_length(struct_now.choice)-1)*100/2+i*100,-4800,obj_ui_dialogue_choice,{text: struct_now.choice[i][0], func: struct_now.choice[i][1]});
+				var _inst = instance_create_depth(960,540-(array_length(struct_now.choice)-1)*100/2+i*100,-480,obj_ui_dialogue_choice,{text: struct_now.choice[i][0], func: struct_now.choice[i][1]});
 	
 				if(i == 0)
 				{

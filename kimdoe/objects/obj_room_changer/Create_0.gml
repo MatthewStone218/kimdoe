@@ -3,6 +3,9 @@
 next_room = -1;
 step = 1;
 
-depth = -1000000;
+depth = -1000;
+
+image_xscale = 2;
+image_yscale = 2;
 
 global.state = ST.MOVING;

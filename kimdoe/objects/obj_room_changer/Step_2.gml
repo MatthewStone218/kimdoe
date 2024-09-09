@@ -8,7 +8,3 @@ if(step == 1)
 		step = 2;
 	}
 }
-x = CM_X;
-y = CM_Y;
-image_xscale = CM_W/sprite_get_width(sprite_index);
-image_yscale = CM_H/sprite_get_height(sprite_index);

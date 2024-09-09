@@ -3,7 +3,7 @@
 function room_goto_f(rm, next_state){
 	if(!instance_exists(obj_room_changer))
 	{
-		var incy = instance_create_depth(0,0,-1000000,obj_room_changer,{next_state: next_state});
+		var incy = instance_create_depth(0,0,-1000,obj_room_changer,{next_state: next_state});
 		incy.next_room = rm;
 	}
 }
