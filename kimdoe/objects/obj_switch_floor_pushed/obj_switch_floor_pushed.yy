@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_switch_floor",
-    "path":"sprites/spr_switch_floor/spr_switch_floor.yy",
+    "name":"spr_switch_floor_pushed",
+    "path":"sprites/spr_switch_floor_pushed/spr_switch_floor_pushed.yy",
   },
   "spriteMaskId":{
     "name":"spr_switch_floor_full_mask",

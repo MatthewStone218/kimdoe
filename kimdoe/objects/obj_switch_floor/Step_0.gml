@@ -3,11 +3,11 @@
 
 if(time < 1)
 {
-	time += 0.2;
+	time += 0.1;
 	if(time >= 1)
 	{
 		time = 1;
 	}
 }
 
-y = ease_get_val(ease_out_cubic(time),prev_y,goal_y);
+image_index = ease_get_val(ease_out_cubic(time),image_index_prev,image_index_goal);

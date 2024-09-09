@@ -3,9 +3,9 @@
 
 event_inherited();
 
-y = ystart+32;
+image_index = sprite_get_number(sprite_index)-1;
 
-y_prev = y;
-y_goal = y;
+image_index_prev = image_index;
+image_index_goal = image_index;
 
 pushed = true;

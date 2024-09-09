@@ -670,6 +670,8 @@
     {"id":{"name":"spr_sol","path":"sprites/spr_sol/spr_sol.yy",},},
     {"id":{"name":"spr_switch_floor_empty_mask","path":"sprites/spr_switch_floor_empty_mask/spr_switch_floor_empty_mask.yy",},},
     {"id":{"name":"spr_switch_floor_full_mask","path":"sprites/spr_switch_floor_full_mask/spr_switch_floor_full_mask.yy",},},
+    {"id":{"name":"spr_switch_floor_pulled","path":"sprites/spr_switch_floor_pulled/spr_switch_floor_pulled.yy",},},
+    {"id":{"name":"spr_switch_floor_pushed","path":"sprites/spr_switch_floor_pushed/spr_switch_floor_pushed.yy",},},
     {"id":{"name":"spr_switch_floor","path":"sprites/spr_switch_floor/spr_switch_floor.yy",},},
     {"id":{"name":"spr_tile_1","path":"sprites/spr_tile_1/spr_tile_1.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},

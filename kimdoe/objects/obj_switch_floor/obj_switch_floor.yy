@@ -12,10 +12,7 @@
     "name":"entity",
     "path":"folders/Objects/game/entity.yy",
   },
-  "parentObjectId":{
-    "name":"obj_sol",
-    "path":"objects/obj_sol/obj_sol.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

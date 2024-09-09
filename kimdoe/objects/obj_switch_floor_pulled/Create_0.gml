@@ -3,7 +3,7 @@
 
 event_inherited();
 
-y_prev = y;
-y_goal = y;
+image_index_prev = image_index;
+image_index_goal = image_index;
 
 pushed = true;
