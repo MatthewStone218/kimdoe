@@ -14,7 +14,7 @@ dialogue_fail =
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
-		text: "사내가 적어도 모발이 5m는 넘어야지.",
+		text: "사내가 적어도 모발이 10m는 넘어야지.",
 		next_struct: function(){ return obj_npc_hair_devil.dialogue_fail[2]; }
 	},
 	{
