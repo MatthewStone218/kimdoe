@@ -8,21 +8,21 @@ dialogue_fail =
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "넌 뭐야? 형편없는 모발을 가지고있군.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_fail[1]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_fail[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "사내가 적어도 모발이 10m는 넘어야지.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_fail[2]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_fail[2]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "죽어라. 흉측한 것.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_fail[3]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_fail[3]; }
 	},
 	{
 		type: "code",
@@ -42,14 +42,14 @@ dialogue_success =
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "음? 넌... 아주 유혹적인 모발을 가지고있군..",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_success[1]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_success[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "모두 뽑아버리고 싶을 정도야.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_success[2]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_success[2]; }
 	},
 	{
 		type: "choice",
@@ -59,7 +59,7 @@ dialogue_success =
 			["뽑아보든가!",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_die[0])}}],
 			["내가 모근을 찾는 걸 도와주지 않겠어?",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear[0])}}]
 		],
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_success[3]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_success[3]; }
 	}
 ]
 
@@ -70,7 +70,7 @@ dialogue_die =
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		text: "나야 좋지.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_die[1]; }
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_die[1]; }
 	}
 	,
 	{
@@ -90,8 +90,8 @@ dialogue_clear =
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
-		text: "그래. 모았다가 한번에 뽑아야 더 절망적인 법이지.",
-		next_struct: function(){ return obj_npc_hair_devil.dialogue_clear[1]; }
+		text: "그래. 모았다가 한번에 뽑아야 더 절망적인 법이지.\n먼저 가서 기다리고 있겠다.",
+		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_clear[1]; }
 	}
 	,
 	{

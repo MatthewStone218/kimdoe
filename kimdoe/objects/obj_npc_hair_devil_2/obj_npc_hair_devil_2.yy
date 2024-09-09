@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc_hair_devil",
+  "%Name":"obj_npc_hair_devil_2",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npc_hair_devil",
+  "name":"obj_npc_hair_devil_2",
   "overriddenProperties":[],
   "parent":{
     "name":"npc",

@@ -31,7 +31,8 @@ global.stage_arr =
 [
 	[rm_prologue,ST.DIALOGUE,"프롤로그"],
 	[rm_stage_1,ST.GAME,"첫 모근"],
-	[rm_stage_2,ST.GAME,"두번째 모근"]
+	[rm_stage_2,ST.GAME,"잠시 빌려가는거야"],
+	[rm_stage_3,ST.GAME,"세번째 모근"]
 ]
 
 texturegroup_load("ROOM_CHANGER");
