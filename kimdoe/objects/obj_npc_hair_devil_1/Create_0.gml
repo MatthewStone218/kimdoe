@@ -58,8 +58,7 @@ dialogue_success =
 		choice: [
 			["뽑아보든가!",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_die[0])}}],
 			["내가 모근을 찾는 걸 도와주지 않겠어?",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear[0])}}]
-		],
-		next_struct: function(){ return obj_npc_hair_devil_1.dialogue_success[3]; }
+		]
 	}
 ]
 

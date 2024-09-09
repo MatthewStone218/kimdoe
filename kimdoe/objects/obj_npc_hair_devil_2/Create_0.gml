@@ -37,8 +37,7 @@ dialogue_success =
 		choice: [
 			["못 믿겠어. 내가 가지고 있을래.",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_die[0])}}],
 			["돌려주는거.. 맞지..?",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear[0])}}]
-		],
-		next_struct: function(){ return obj_npc_hair_devil_2.dialogue_success[3]; }
+		]
 	}
 ]
 
