@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+
 my_state = ST.DIALOGUE;
 
 navigation =

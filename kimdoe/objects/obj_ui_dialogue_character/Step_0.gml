@@ -8,7 +8,7 @@ if(time < 1)
 	if(time >= 1)
 	{
 		time = 1;
-		if(die)
+		if(dying)
 		{
 			instance_destroy();
 		}

@@ -73,6 +73,7 @@
     {"$GMFolder":"","%Name":"font","folderPath":"folders/PRODUCTIVITY/font.yy","name":"font","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"obj","folderPath":"folders/PRODUCTIVITY/obj.yy","name":"obj","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"utils","folderPath":"folders/PRODUCTIVITY/obj/utils.yy","name":"utils","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"room_changer","folderPath":"folders/Objects/room_changer.yy","name":"room_changer","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"scr","folderPath":"folders/PRODUCTIVITY/scr.yy","name":"scr","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GMLIVE","folderPath":"folders/PRODUCTIVITY/scr/GMLIVE.yy","name":"GMLIVE","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"ime","folderPath":"folders/PRODUCTIVITY/scr/ime.yy","name":"ime","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -101,6 +102,7 @@
     {"$GMFolder":"","%Name":"tile","folderPath":"folders/Sprites/game/tile.yy","name":"tile","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"main","folderPath":"folders/Sprites/main.yy","name":"main","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"pause","folderPath":"folders/Sprites/pause.yy","name":"pause","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"room_changer","folderPath":"folders/Sprites/room_changer.yy","name":"room_changer","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"stage_selection","folderPath":"folders/Sprites/stage_selection.yy","name":"stage_selection","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -222,6 +224,7 @@
     {"id":{"name":"obj_ui_dialogue_bg_3","path":"objects/obj_ui_dialogue_bg_3/obj_ui_dialogue_bg_3.yy",},},
     {"id":{"name":"obj_ui_dialogue_character","path":"objects/obj_ui_dialogue_character/obj_ui_dialogue_character.yy",},},
     {"id":{"name":"obj_ui_dialogue_choice","path":"objects/obj_ui_dialogue_choice/obj_ui_dialogue_choice.yy",},},
+    {"id":{"name":"obj_ui_dialogue_name","path":"objects/obj_ui_dialogue_name/obj_ui_dialogue_name.yy",},},
     {"id":{"name":"obj_ui_dialogue_text","path":"objects/obj_ui_dialogue_text/obj_ui_dialogue_text.yy",},},
     {"id":{"name":"obj_ui_dialogue","path":"objects/obj_ui_dialogue/obj_ui_dialogue.yy",},},
     {"id":{"name":"obj_ui_pause_bg","path":"objects/obj_ui_pause_bg/obj_ui_pause_bg.yy",},},
@@ -672,6 +675,7 @@
     {"id":{"name":"spr_rock_1","path":"sprites/spr_rock_1/spr_rock_1.yy",},},
     {"id":{"name":"spr_rock_2","path":"sprites/spr_rock_2/spr_rock_2.yy",},},
     {"id":{"name":"spr_rock_3","path":"sprites/spr_rock_3/spr_rock_3.yy",},},
+    {"id":{"name":"spr_room_changer","path":"sprites/spr_room_changer/spr_room_changer.yy",},},
     {"id":{"name":"spr_sign_in_box","path":"sprites/spr_sign_in_box/spr_sign_in_box.yy",},},
     {"id":{"name":"spr_sol","path":"sprites/spr_sol/spr_sol.yy",},},
     {"id":{"name":"spr_tile_1","path":"sprites/spr_tile_1/spr_tile_1.yy",},},
@@ -699,5 +703,6 @@
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"ROOM_CHANGER","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"ROOM_CHANGER","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }

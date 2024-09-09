@@ -16,6 +16,7 @@ function set_dialogue(struct)
 
 	instance_destroy(obj_ui_dialogue_text);
 	instance_destroy(obj_ui_dialogue_choice);
+	instance_destroy(obj_ui_dialogue_name);
 	
 	if(variable_struct_exists(struct_now,"type"))
 	{
@@ -33,8 +34,13 @@ function set_dialogue(struct)
 		{
 			with(obj_ui_dialogue_character)
 			{
-				kill();
+				die();
 			}
+		}
+		
+		if(variable_struct_exists(struct_now,"name"))
+		{
+			instance_create_depth(960,720,-4800,obj_ui_dialogue_name,{text: struct_now.name});
 		}
 		
 		if(struct_now.type == "text")
@@ -72,19 +78,12 @@ function set_dialogue(struct)
 
 function kill_dialogue()
 {
-	obj_ui_dialogue_bg_1.die = true;
-	obj_ui_dialogue_bg_2.die = true;
-	obj_ui_dialogue_bg_3.die = true;
-}
-
-function clean_dialogue()
-{
-	instance_destroy(obj_ui_dialogue_text);
-	instance_destroy(obj_ui_dialogue_choice);
-	instance_destroy(obj_ui_dialogue_bg_1);
-	instance_destroy(obj_ui_dialogue_bg_2);
-	instance_destroy(obj_ui_dialogue_bg_3);
-	instance_destroy(obj_ui_dialogue_character);
+	with(obj_ui_dialogue_bg_1){die();}
+	with(obj_ui_dialogue_bg_2){die();}
+	with(obj_ui_dialogue_bg_3){die();}
+	with(obj_ui_dialogue_text){die();}
+	with(obj_ui_dialogue_choice){die();}
+	with(obj_ui_dialogue_character){die();}
 }
 
 register_click_func(

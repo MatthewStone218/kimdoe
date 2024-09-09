@@ -4,13 +4,14 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_room_changer",
   "overriddenProperties":[],
   "parent":{
-    "name":"utils",
-    "path":"folders/PRODUCTIVITY/obj/utils.yy",
+    "name":"room_changer",
+    "path":"folders/Objects/room_changer.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_black_dot",
-    "path":"sprites/spr_black_dot/spr_black_dot.yy",
+    "name":"spr_room_changer",
+    "path":"sprites/spr_room_changer/spr_room_changer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

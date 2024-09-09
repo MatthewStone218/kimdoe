@@ -138,6 +138,20 @@ function move(xx,yy,_dir)
 			gain();
 		}
 	}
+	
+	if(position_meeting(xx,yy,obj_hair))
+	{
+		var _inst = instance_place(xx,yy,obj_hair);
+		if(_inst.hair_index == 1)
+		{
+			global.state = ST.DYING;
+			with(_inst)
+			{
+				die(true);
+			}
+			instance_create_depth(x,y,-10000,obj_ef_player_die);
+		}
+	}
 				
 	pull_hair();
 	

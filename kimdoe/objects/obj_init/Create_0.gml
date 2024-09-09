@@ -34,6 +34,8 @@ global.stage_arr =
 	[rm_stage_2,ST.GAME,"두번째 모근"]
 ]
 
+texturegroup_load("ROOM_CHANGER");
+
 scr_live_set_auto()
 
 randomize();
