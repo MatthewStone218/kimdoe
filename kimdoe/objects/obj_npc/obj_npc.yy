@@ -9,7 +9,10 @@
     "name":"npc",
     "path":"folders/Objects/game/npc.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_sol",
+    "path":"objects/obj_sol/obj_sol.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
