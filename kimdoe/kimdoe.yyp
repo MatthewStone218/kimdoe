@@ -204,6 +204,8 @@
     {"id":{"name":"obj_stage_selection_camera","path":"objects/obj_stage_selection_camera/obj_stage_selection_camera.yy",},},
     {"id":{"name":"obj_stage_selection_maker","path":"objects/obj_stage_selection_maker/obj_stage_selection_maker.yy",},},
     {"id":{"name":"obj_stage_system","path":"objects/obj_stage_system/obj_stage_system.yy",},},
+    {"id":{"name":"obj_switch_floor_pulled","path":"objects/obj_switch_floor_pulled/obj_switch_floor_pulled.yy",},},
+    {"id":{"name":"obj_switch_floor_pushed","path":"objects/obj_switch_floor_pushed/obj_switch_floor_pushed.yy",},},
     {"id":{"name":"obj_switch_floor","path":"objects/obj_switch_floor/obj_switch_floor.yy",},},
     {"id":{"name":"obj_textbox_sample","path":"objects/obj_textbox_sample/obj_textbox_sample.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
