@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ui_stage_selection",
-    "path":"sprites/spr_ui_stage_selection/spr_ui_stage_selection.yy",
+    "name":"spr_ui_dialogue_choice",
+    "path":"sprites/spr_ui_dialogue_choice/spr_ui_dialogue_choice.yy",
   },
   "spriteMaskId":null,
   "visible":true,

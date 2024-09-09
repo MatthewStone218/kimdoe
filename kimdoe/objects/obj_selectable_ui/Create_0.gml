@@ -4,7 +4,7 @@
 focused = false;
 
 register_click_func(
-	function(){ return global.state == my_state && focused },
+	function(){ return global.state == my_state && focused && (input_check_pressed("ok") || input_check_pressed("left") || input_check_pressed("right") || input_check_pressed("up") || input_check_pressed("down")) },
 	function()
 	{
 		if(input_check_pressed("ok")){ ok(); }

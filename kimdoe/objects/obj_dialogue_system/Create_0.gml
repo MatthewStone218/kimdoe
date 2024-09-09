@@ -1,6 +1,8 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
+depth = 0;
+
 struct_now = {};
 
 function set_dialogue(struct)
@@ -40,7 +42,7 @@ function set_dialogue(struct)
 		
 		if(variable_struct_exists(struct_now,"name"))
 		{
-			instance_create_depth(960,720,-480,obj_ui_dialogue_name,{text: struct_now.name});
+			instance_create_depth(960,750,-480,obj_ui_dialogue_name,{text: struct_now.name});
 		}
 		
 		if(struct_now.type == "text")
@@ -53,7 +55,7 @@ function set_dialogue(struct)
 
 			for(var i = 0; i < array_length(struct_now.choice); i++)
 			{
-				var _inst = instance_create_depth(960,540-(array_length(struct_now.choice)-1)*100/2+i*100,-480,obj_ui_dialogue_choice,{text: struct_now.choice[i][0], func: struct_now.choice[i][1]});
+				var _inst = instance_create_depth(960,900-(array_length(struct_now.choice)-1)*110/2+i*110,-480,obj_ui_dialogue_choice,{text: struct_now.choice[i][0], my_func: struct_now.choice[i][1]});
 	
 				if(i == 0)
 				{
@@ -81,9 +83,10 @@ function kill_dialogue()
 	with(obj_ui_dialogue_bg_1){die();}
 	with(obj_ui_dialogue_bg_2){die();}
 	with(obj_ui_dialogue_bg_3){die();}
-	with(obj_ui_dialogue_text){die();}
-	with(obj_ui_dialogue_choice){die();}
 	with(obj_ui_dialogue_character){die();}
+	instance_destroy(obj_ui_dialogue_name);
+	instance_destroy(obj_ui_dialogue_text)
+	instance_destroy(obj_ui_dialogue_choice)
 }
 
 register_click_func(

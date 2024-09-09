@@ -56,10 +56,31 @@ dialogue_success =
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
 		choice: [
-			["뽑아보든가!",function(){with(obj_player){with(obj_dialogue_system){kill_dialogue();} kill_self();}}],
-			["내가 모근을 찾는 걸 도와주지 않겠어?",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear[0])};}]
+			["뽑아보든가!",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_die[0])}}],
+			["내가 모근을 찾는 걸 도와주지 않겠어?",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear[0])}}]
 		],
 		next_struct: function(){ return obj_npc_hair_devil.dialogue_success[3]; }
+	}
+]
+
+dialogue_die = 
+[
+	{
+		type: "text",
+		image: spr_dialogue_player_1,
+		name: "탈모의 악마",
+		text: "나야 좋지.",
+		next_struct: function(){ return obj_npc_hair_devil.dialogue_die[1]; }
+	}
+	,
+	{
+		type: "code",
+		image: spr_dialogue_player_1,
+		name: "탈모의 악마",
+		func: function(){
+			with(obj_dialogue_system){kill_dialogue();}
+			with(obj_player){kill_self();}
+		}
 	}
 ]
 
@@ -77,7 +98,7 @@ dialogue_clear =
 		type: "code",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
-		code: function(){
+		func: function(){
 			unlock_stage(2);
 			room_goto_f(rm_stage_2);
 		}

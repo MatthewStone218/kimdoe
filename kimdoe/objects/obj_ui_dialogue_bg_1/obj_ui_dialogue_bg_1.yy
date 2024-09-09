@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ui_dialogue_bg_2",
-    "path":"sprites/spr_ui_dialogue_bg_2/spr_ui_dialogue_bg_2.yy",
+    "name":"spr_ui_dialogue_bg_1",
+    "path":"sprites/spr_ui_dialogue_bg_1/spr_ui_dialogue_bg_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
