@@ -10,8 +10,8 @@
   "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"entity",
+    "path":"folders/Objects/game/entity.yy",
   },
   "parentObjectId":{
     "name":"obj_blocks",
