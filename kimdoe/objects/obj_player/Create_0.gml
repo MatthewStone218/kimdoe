@@ -175,6 +175,11 @@ function move(xx,yy,_dir)
 			interact();
 		}
 	}
+	
+	if(position_meeting(xx,yy,obj_spike))
+	{
+		kill_self();
+	}
 }
 
 function kick(xx,yy,_dir)

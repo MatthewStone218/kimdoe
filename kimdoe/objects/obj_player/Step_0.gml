@@ -68,18 +68,12 @@ if(action_time == 1)
 		if(position_meeting(x-global.cell_width,y,obj_block))
 		{
 			kick(x-global.cell_width,y,"left");
+			with(obj_switch_spike){switch_floor();}
 		}
 		else if(!position_meeting(x-global.cell_width,y,obj_sol))
 		{
-			with(obj_switch_floor){switch_floor();}
-			if(position_meeting(x-global.cell_width,y,obj_sol))
-			{
-				with(obj_switch_floor){switch_floor();}
-			}
-			else
-			{
-				move(x-global.cell_width,y,"left");
-			}
+			with(obj_switch_spike){switch_floor();}
+			move(x-global.cell_width,y,"left");
 		}
 	}
 	else if(action_input == "right")
@@ -87,19 +81,13 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x+global.cell_width,y,obj_block))
 		{
+			with(obj_switch_spike){switch_floor();}
 			kick(x+global.cell_width,y,"right");
 		}
 		else if(!position_meeting(x+global.cell_width,y,obj_sol))
 		{
-			with(obj_switch_floor){switch_floor();}
-			if(position_meeting(x+global.cell_width,y,obj_sol))
-			{
-				with(obj_switch_floor){switch_floor();}
-			}
-			else
-			{
-				move(x+global.cell_width,y,"right");
-			}
+			with(obj_switch_spike){switch_floor();}
+			move(x+global.cell_width,y,"right");
 		}
 	}
 	else if(action_input == "up")
@@ -107,19 +95,13 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x,y-global.cell_width,obj_block))
 		{
+			with(obj_switch_spike){switch_floor();}
 			kick(x,y-global.cell_width,"up");
 		}
 		else if(!position_meeting(x,y-global.cell_width,obj_sol))
 		{
-			with(obj_switch_floor){switch_floor();}
-			if(position_meeting(x,y-global.cell_width,obj_sol))
-			{
-				with(obj_switch_floor){switch_floor();}
-			}
-			else
-			{
-				move(x,y-global.cell_width,"up");
-			}
+			with(obj_switch_spike){switch_floor();}
+			move(x,y-global.cell_width,"up");
 		}
 	}
 	else if(action_input == "down")
@@ -127,19 +109,13 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x,y+global.cell_width,obj_block))
 		{
+			with(obj_switch_spike){switch_floor();}
 			kick(x,y+global.cell_width,"down");
 		}
 		else if(!position_meeting(x,y+global.cell_width,obj_sol))
 		{
-			with(obj_switch_floor){switch_floor();}
-			if(position_meeting(x,y+global.cell_width,obj_sol))
-			{
-				with(obj_switch_floor){switch_floor();}
-			}
-			else
-			{
-				move(x,y+global.cell_width,"down");
-			}
+			with(obj_switch_spike){switch_floor();}
+			move(x,y+global.cell_width,"down");
 		}
 	}
 }
