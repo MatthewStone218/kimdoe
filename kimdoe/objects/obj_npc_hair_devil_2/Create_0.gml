@@ -79,7 +79,7 @@ dialogue_clear =
 		name: "탈모의 악마",
 		func: function(){
 			unlock_stage(3);
-			room_goto_f(rm_stage_3);
+			room_goto_f(rm_stage_3, ST.GAME);
 		}
 	}
 ]
