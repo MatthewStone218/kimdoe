@@ -15,7 +15,6 @@ dialogue_fail =
 		image: spr_dialogue_player_1,
 		func: function()
 		{
-			unlock_stage(2);
 			with(obj_player){with(obj_dialogue_system){kill_dialogue();} kill_self();}
 		}
 	}
@@ -27,7 +26,7 @@ dialogue_success =
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "탈모의 악마",
-		text: "모발을 쫒다보니 여기까지 와버렸군. 이제부터는 다른 악마의 영역이야.",
+		text: "여기부터는 다른 악마의 영역이야.",
 		next_struct: function(){ return obj_npc_hair_devil_4.dialogue_success[1]; }
 	},
 	{

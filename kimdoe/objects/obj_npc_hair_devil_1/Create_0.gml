@@ -29,7 +29,6 @@ dialogue_fail =
 		image: spr_dialogue_player_1,
 		func: function()
 		{
-			unlock_stage(2);
 			with(obj_player){with(obj_dialogue_system){kill_dialogue();} kill_self();}
 		}
 	}

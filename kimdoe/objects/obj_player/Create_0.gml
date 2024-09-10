@@ -176,6 +176,8 @@ function move(xx,yy,_dir)
 		}
 	}
 	
+	with(obj_switch_spike){switch_floor();}
+	
 	if(position_meeting(xx,yy,obj_spike))
 	{
 		kill_self();
@@ -189,7 +191,9 @@ function kick(xx,yy,_dir)
 	action = "kick";
 	action_time = 0;
 	var _inst = instance_position(xx,yy,obj_block);
-	with(_inst){ kicked(_dir); }
+	
+	var _moved = false;
+	with(_inst){ _moved = kicked(_dir); }
 	
 	switch(_dir)
 	{
@@ -200,6 +204,16 @@ function kick(xx,yy,_dir)
 	}
 	
 	image_index = 0;
+	
+	if(_moved)
+	{
+		with(obj_switch_spike){switch_floor();}
+	}
+	
+	if(position_meeting(x,y,obj_spike))
+	{
+		kill_self();
+	}
 }
 
 function set_hair_pos()

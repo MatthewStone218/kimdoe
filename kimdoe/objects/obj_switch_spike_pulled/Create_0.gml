@@ -6,4 +6,4 @@ event_inherited();
 image_index_prev = image_index;
 image_index_goal = image_index;
 
-pushed = true;
+pushed = false;

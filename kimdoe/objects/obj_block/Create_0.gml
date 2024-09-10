@@ -19,6 +19,8 @@ bib = 0;
 
 function kicked(dir)
 {	
+	var _moved = false;
+	
 	switch(dir)
 	{
 		case "left":
@@ -42,10 +44,12 @@ function kicked(dir)
 	instance_create_depth(x,y,depth+1,obj_ef_move);
 	if(position_meeting(xx,yy,obj_blocks))
 	{
+		_moved = false;
 		bib = 25;
 	}
 	else
 	{
+		_moved = true;
 		action = "kicked";
 		action_time = 0;
 	
@@ -68,6 +72,8 @@ function kicked(dir)
 			die(true);
 		}
 	}
+	
+	return _moved;
 }
 
 function set_position()

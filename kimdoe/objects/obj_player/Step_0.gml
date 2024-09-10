@@ -68,11 +68,9 @@ if(action_time == 1)
 		if(position_meeting(x-global.cell_width,y,obj_block))
 		{
 			kick(x-global.cell_width,y,"left");
-			with(obj_switch_spike){switch_floor();}
 		}
 		else if(!position_meeting(x-global.cell_width,y,obj_sol))
 		{
-			with(obj_switch_spike){switch_floor();}
 			move(x-global.cell_width,y,"left");
 		}
 	}
@@ -81,12 +79,10 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x+global.cell_width,y,obj_block))
 		{
-			with(obj_switch_spike){switch_floor();}
 			kick(x+global.cell_width,y,"right");
 		}
 		else if(!position_meeting(x+global.cell_width,y,obj_sol))
 		{
-			with(obj_switch_spike){switch_floor();}
 			move(x+global.cell_width,y,"right");
 		}
 	}
@@ -95,12 +91,10 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x,y-global.cell_width,obj_block))
 		{
-			with(obj_switch_spike){switch_floor();}
 			kick(x,y-global.cell_width,"up");
 		}
 		else if(!position_meeting(x,y-global.cell_width,obj_sol))
 		{
-			with(obj_switch_spike){switch_floor();}
 			move(x,y-global.cell_width,"up");
 		}
 	}
@@ -109,12 +103,10 @@ if(action_time == 1)
 		action_input = "none";
 		if(position_meeting(x,y+global.cell_width,obj_block))
 		{
-			with(obj_switch_spike){switch_floor();}
 			kick(x,y+global.cell_width,"down");
 		}
 		else if(!position_meeting(x,y+global.cell_width,obj_sol))
 		{
-			with(obj_switch_spike){switch_floor();}
 			move(x,y+global.cell_width,"down");
 		}
 	}
