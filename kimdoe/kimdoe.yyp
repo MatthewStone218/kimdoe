@@ -188,6 +188,7 @@
     {"id":{"name":"obj_npc_iq_devil_1","path":"objects/obj_npc_iq_devil_1/obj_npc_iq_devil_1.yy",},},
     {"id":{"name":"obj_npc_iq_devil_2","path":"objects/obj_npc_iq_devil_2/obj_npc_iq_devil_2.yy",},},
     {"id":{"name":"obj_npc_iq_devil_3","path":"objects/obj_npc_iq_devil_3/obj_npc_iq_devil_3.yy",},},
+    {"id":{"name":"obj_npc_iq_devil_4","path":"objects/obj_npc_iq_devil_4/obj_npc_iq_devil_4.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_objs","path":"objects/obj_objs/obj_objs.yy",},},
     {"id":{"name":"obj_pause_system","path":"objects/obj_pause_system/obj_pause_system.yy",},},

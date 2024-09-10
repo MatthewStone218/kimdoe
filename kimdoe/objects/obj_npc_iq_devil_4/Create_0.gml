@@ -8,21 +8,21 @@ dialogue_fail =
 		image: spr_dialogue_player_1,
 		name: "능지의 악마",
 		text: "여전히 네 지능은 모자라보이는구나.",
-		next_struct: function(){ return obj_npc_iq_devil_3.dialogue_fail[1]; }
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_fail[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "능지의 악마",
 		text: "머리카락이라도 있었으면 좀 나았을텐데.",
-		next_struct: function(){ return obj_npc_iq_devil_3.dialogue_fail[2]; }
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_fail[2]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "",
 		text: "(그는 당신의 지능과 모발을 흡수했다.)",
-		next_struct: function(){ return obj_npc_iq_devil_3.dialogue_fail[3]; }
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_fail[3]; }
 	},
 	{
 		type: "code",
@@ -40,15 +40,15 @@ dialogue_success =
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "능지의 악마",
-		text: "네 지능은 참 흥미로워.\n모발과 관련된 일에 대해서만 약 2배의 지능을 발휘하고있어.",
-		next_struct: function(){ return obj_npc_iq_devil_3.dialogue_success[1]; }
+		text: "네게 경의를 표하지.",
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_success[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "능지의 악마",
-		text: "흠. 네가 다음 퍼즐을 푸는 모습을 봐야겠어.",
-		next_struct: function(){ return obj_npc_iq_devil_3.dialogue_success[2]; }
+		text: "그 지능으로 이 퍼즐을 풀다니, 사람들은 이걸 기적이라 부르지.\n충분히 관찰했으니 더이상 따라다니지 않으마.",
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_success[2]; }
 	},
 	{
 		type: "code",
