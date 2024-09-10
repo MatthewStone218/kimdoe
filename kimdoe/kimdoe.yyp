@@ -180,6 +180,7 @@
     {"id":{"name":"obj_npc_hair_devil_1","path":"objects/obj_npc_hair_devil_1/obj_npc_hair_devil_1.yy",},},
     {"id":{"name":"obj_npc_hair_devil_2","path":"objects/obj_npc_hair_devil_2/obj_npc_hair_devil_2.yy",},},
     {"id":{"name":"obj_npc_hair_devil_3","path":"objects/obj_npc_hair_devil_3/obj_npc_hair_devil_3.yy",},},
+    {"id":{"name":"obj_npc_hair_devil_4","path":"objects/obj_npc_hair_devil_4/obj_npc_hair_devil_4.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_objs","path":"objects/obj_objs/obj_objs.yy",},},
     {"id":{"name":"obj_pause_system","path":"objects/obj_pause_system/obj_pause_system.yy",},},
@@ -234,6 +235,7 @@
     {"id":{"name":"rm_stage_2","path":"rooms/rm_stage_2/rm_stage_2.yy",},},
     {"id":{"name":"rm_stage_3","path":"rooms/rm_stage_3/rm_stage_3.yy",},},
     {"id":{"name":"rm_stage_4","path":"rooms/rm_stage_4/rm_stage_4.yy",},},
+    {"id":{"name":"rm_stage_5","path":"rooms/rm_stage_5/rm_stage_5.yy",},},
     {"id":{"name":"rm_stage_selection","path":"rooms/rm_stage_selection/rm_stage_selection.yy",},},
     {"id":{"name":"rm_stage_standard","path":"rooms/rm_stage_standard/rm_stage_standard.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
@@ -705,6 +707,7 @@
     {"roomId":{"name":"rm_stage_2","path":"rooms/rm_stage_2/rm_stage_2.yy",},},
     {"roomId":{"name":"rm_stage_3","path":"rooms/rm_stage_3/rm_stage_3.yy",},},
     {"roomId":{"name":"rm_stage_4","path":"rooms/rm_stage_4/rm_stage_4.yy",},},
+    {"roomId":{"name":"rm_stage_5","path":"rooms/rm_stage_5/rm_stage_5.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

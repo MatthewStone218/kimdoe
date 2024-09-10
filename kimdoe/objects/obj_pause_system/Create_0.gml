@@ -9,7 +9,7 @@ register_click_func(
 	{
 		if(global.state == ST.PAUSE)
 		{
-			prev_state = global.state;
+			global.state = prev_state;
 			obj_ui_pause_resume.focused = true;
 			obj_ui_pause_goto_main.focused = false;
 		}
