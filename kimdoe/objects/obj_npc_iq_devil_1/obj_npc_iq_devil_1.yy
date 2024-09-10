@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_hair_devil",
-    "path":"sprites/spr_npc_hair_devil/spr_npc_hair_devil.yy",
+    "name":"spr_npc_iq_devil",
+    "path":"sprites/spr_npc_iq_devil/spr_npc_iq_devil.yy",
   },
   "spriteMaskId":null,
   "visible":true,

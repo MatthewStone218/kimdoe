@@ -114,5 +114,4 @@ if(action_time == 1)
 
 depth = -y;
 
-set_hair_pos();
-
+set_hair_pos()

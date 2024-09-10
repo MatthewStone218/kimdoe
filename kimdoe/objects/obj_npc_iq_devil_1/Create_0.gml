@@ -53,7 +53,7 @@ dialogue_success =
 	{
 		type: "choice",
 		image: spr_dialogue_player_1,
-		name: "능지의 악마",
+		name: "",
 		choice: [
 			["내 모발을 다 가져가.",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear_1[0])}}],
 			["차라리 날 죽여라!",function(){with(obj_dialogue_system){set_dialogue(other.dialogue_clear_2[0])}}]
