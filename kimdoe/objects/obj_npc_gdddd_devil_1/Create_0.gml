@@ -8,14 +8,14 @@ dialogue_fail =
 		image: spr_dialogue_player_1,
 		name: "군똥딸의 악마",
 		text: "너, 머리숱이 없구나.",
-		next_struct: function(){ return obj_npc_hair_devil_5.dialogue_fail[1]; }
+		next_struct: function(){ return obj_npc_gdddd_devil_1.dialogue_fail[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "군똥딸의 악마",
 		text: "불쌍하군. 빠르게 죽여주지.",
-		next_struct: function(){ return obj_npc_hair_devil_5.dialogue_fail[2]; }
+		next_struct: function(){ return obj_npc_gdddd_devil_1.dialogue_fail[2]; }
 	},
 	{
 		type: "code",
@@ -34,25 +34,25 @@ dialogue_success =
 		image: spr_dialogue_player_1,
 		name: "군똥딸의 악마",
 		text: "이봐! 여기를 지나가려면 나의 이야기를 들어야한다.\n어떤 이야기가 듣고싶나?",
-		next_struct: function(){ return obj_npc_hair_devil_5.dialogue_success[1]; }
+		next_struct: function(){ return obj_npc_gdddd_devil_1.dialogue_success[1]; }
 	},
 	{
 		type: "choice",
 		image: spr_dialogue_player_1,
 		name: "",
 		choice: [
-			["군대 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_hair_devil_5.dialogue_success[2])}}],
-			["똥 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_hair_devil_5.dialogue_success[2])}}],
-			["딸딸이 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_hair_devil_5.dialogue_success[2])}}],
+			["군대 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_gdddd_devil_1.dialogue_success[2])}}],
+			["똥 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_gdddd_devil_1.dialogue_success[2])}}],
+			["딸딸이 얘기",function(){with(obj_dialogue_system){set_dialogue(obj_npc_gdddd_devil_1.dialogue_success[2])}}],
 		],
-		next_struct: function(){ return obj_npc_hair_devil_5.dialogue_success[2]; }
+		next_struct: function(){ return obj_npc_gdddd_devil_1.dialogue_success[2]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "",
-		text: "(당신은 끔직한 이야기를 5시간 동안 들고 겨우 풀려났다.)",
-		next_struct: function(){ return obj_npc_hair_devil_5.dialogue_success[3]; }
+		text: "(당신은 끔직한 이야기를 5시간 동안 듣고 겨우 풀려났다.)",
+		next_struct: function(){ return obj_npc_gdddd_devil_1.dialogue_success[3]; }
 	},
 	{
 		type: "code",
