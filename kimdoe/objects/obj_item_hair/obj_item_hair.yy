@@ -8,8 +8,8 @@
   "name":"obj_item_hair",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"item",
+    "path":"folders/Objects/game/item.yy",
   },
   "parentObjectId":{
     "name":"obj_item",

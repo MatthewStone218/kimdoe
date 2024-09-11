@@ -3,4 +3,4 @@
 
 event_inherited();
 
-instance_create_depth(x,y-110,depth-1,obj_fire);
+instance_create_depth(x,y-100,depth-1,obj_fire);
