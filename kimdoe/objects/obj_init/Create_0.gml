@@ -30,12 +30,27 @@ ini_close();
 global.stage_arr =
 [
 	[rm_prologue,ST.DIALOGUE,"프롤로그"],
+	[rm_tutorial,ST.GAME,"모발의 요정"],
 	[rm_stage_1,ST.GAME,"첫 모근"],
 	[rm_stage_2,ST.GAME,"잠시 빌려가는거야"],
 	[rm_stage_3,ST.GAME,"세번째 모근"],
 	[rm_stage_4,ST.GAME,"네번째 모근"],
 	[rm_stage_5,ST.GAME,"군똥딸"],
-	[rm_stage_6,ST.GAME,"군똥딸2"]
+	[rm_stage_6,ST.GAME,"군똥딸2"],
+	[rm_stage_7,ST.GAME,"햇반 가져와"],
+	[rm_stage_8,ST.GAME,"마지막 군똥딸"],
+	[rm_stage_9,ST.GAME,"능지 테스트"],
+	[rm_stage_10,ST.GAME,"자기 객관화"],
+	[rm_stage_11,ST.GAME,"신비한 지능"],
+	[rm_stage_12,ST.GAME,"기적"],
+	[rm_stage_13,ST.GAME,""],
+	[rm_stage_14,ST.GAME,""],
+	[rm_stage_15,ST.GAME,""],
+	[rm_stage_16,ST.GAME,""],
+	[rm_stage_17,ST.GAME,""],
+	[rm_stage_18,ST.GAME,""],
+	[rm_stage_19,ST.GAME,""],
+	[rm_stage_20,ST.GAME,""]
 ]
 
 texturegroup_load("ROOM_CHANGER");

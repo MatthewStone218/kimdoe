@@ -33,7 +33,7 @@ dialogue =
 		func: function()
 		{
 			unlock_stage(1);
-			room_goto_f(rm_stage_1,ST.GAME);
+			room_goto_f(rm_tutorial,ST.GAME);
 		}
 	}
 ]
