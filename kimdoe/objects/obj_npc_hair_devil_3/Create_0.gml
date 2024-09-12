@@ -5,14 +5,14 @@ dialogue_fail =
 [
 	{
 		type: "text",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_devil_1,
 		name: "탈모의 악마",
 		text: "더 많은 모발이 필요하다. 죽여줄테니 다시 모아오도록.",
 		next_struct: function(){ return obj_npc_hair_devil_3.dialogue_fail[1]; }
 	},
 	{
 		type: "code",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_devil_1,
 		func: function()
 		{
 			with(obj_player){with(obj_dialogue_system){kill_dialogue();} kill_self();}
@@ -24,21 +24,21 @@ dialogue_success =
 [
 	{
 		type: "text",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_devil_1,
 		name: "탈모의 악마",
 		text: "이것 봐. 벌써 모발이 이만큼이나 모였어.",
 		next_struct: function(){ return obj_npc_hair_devil_3.dialogue_success[1]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_devil_1,
 		name: "탈모의 악마",
 		text: "도대체 얼마나 심한 탈모를 앓고있던거야?",
 		next_struct: function(){ return obj_npc_hair_devil_3.dialogue_success[2]; }
 	},
 	{
 		type: "code",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_devil_1,
 		name: "탈모의 악마",
 		func: function()
 		{
