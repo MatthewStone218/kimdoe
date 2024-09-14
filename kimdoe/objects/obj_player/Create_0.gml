@@ -114,7 +114,11 @@ function try_move(xx,yy,dir_str)
 {
 	if(position_meeting(xx,yy,obj_block))
 	{
-		kick(xx,yy,dir_str);
+		kick_block(xx,yy,dir_str);
+	}
+	else if(position_meeting(xx,yy,obj_enemy))
+	{
+		kick_enemy(xx,yy,dir_str);
 	}
 	else if(position_meeting(xx,yy,obj_locked_block))
 	{
@@ -215,26 +219,16 @@ function move(xx,yy,_dir)
 	}
 }
 
-function kick(xx,yy,_dir)
+function kick_block(xx,yy,_dir)
 {
 	instance_create_depth(xx,yy,depth-1000,obj_ef_kick);
-	dir = _dir;
-	action = "kick";
-	action_time = 0;
+
+	play_kick_ani(_dir);
+
 	var _inst = instance_position(xx,yy,obj_block);
 	
 	var _moved = false;
 	with(_inst){ _moved = kicked(_dir); }
-	
-	switch(_dir)
-	{
-		case "left": sprite_index = spr_player_kick_left; break;
-		case "right": sprite_index = spr_player_kick_right; break;
-		case "up": sprite_index = spr_player_kick_up; break;
-		case "down": sprite_index = spr_player_kick_down; break;
-	}
-	
-	image_index = 0;
 	
 	if(_moved)
 	{
@@ -245,6 +239,41 @@ function kick(xx,yy,_dir)
 	{
 		kill_self();
 	}
+}
+
+function kick_enemy(xx,yy,_dir)
+{
+	instance_create_depth(xx,yy,depth-1000,obj_ef_kick);
+	
+	play_kick_ani(_dir);
+	
+	var _inst = instance_position(xx,yy,obj_enemy);
+	
+	with(_inst){ kicked(_dir); }
+	
+	with(obj_switch_spike){switch_floor();}
+	
+	if(position_meeting(x,y,obj_spike))
+	{
+		kill_self();
+	}
+}
+
+function play_kick_ani(_dir)
+{
+	dir = _dir;
+	action = "kick";
+	action_time = 0;
+	
+	switch(_dir)
+	{
+		case "left": sprite_index = spr_player_kick_left; break;
+		case "right": sprite_index = spr_player_kick_right; break;
+		case "up": sprite_index = spr_player_kick_up; break;
+		case "down": sprite_index = spr_player_kick_down; break;
+	}
+	
+	image_index = 0;
 }
 
 function set_hair_pos()
