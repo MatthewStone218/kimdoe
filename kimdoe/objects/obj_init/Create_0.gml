@@ -34,7 +34,7 @@ global.stage_arr =
 	[rm_stage_1,ST.GAME,"첫 모근"],
 	[rm_stage_2,ST.GAME,"잠시 빌려가는거야"],
 	[rm_stage_3,ST.GAME,"세번째 모근"],
-	[rm_stage_4,ST.GAME,"네번째 모근"],
+	[rm_stage_4,ST.GAME,"탈모 박사"],
 	[rm_stage_5,ST.GAME,"군똥딸"],
 	[rm_stage_6,ST.GAME,"군똥딸2"],
 	[rm_stage_7,ST.GAME,"햇반 가져와"],
@@ -43,14 +43,11 @@ global.stage_arr =
 	[rm_stage_10,ST.GAME,"자기 객관화"],
 	[rm_stage_11,ST.GAME,"신비한 지능"],
 	[rm_stage_12,ST.GAME,"기적"],
-	[rm_stage_13,ST.GAME,""],
-	[rm_stage_14,ST.GAME,""],
-	[rm_stage_15,ST.GAME,""],
-	[rm_stage_16,ST.GAME,""],
-	[rm_stage_17,ST.GAME,""],
-	[rm_stage_18,ST.GAME,""],
-	[rm_stage_19,ST.GAME,""],
-	[rm_stage_20,ST.GAME,""]
+	[rm_stage_13,ST.GAME,"골룸조이고"],
+	[rm_stage_14,ST.GAME,"똥겜은 멀지 않다"],
+	[rm_stage_15,ST.GAME,"똥겜 중독"],
+	[rm_stage_16,ST.GAME,"똥겜의 왕"],
+	[rm_stage_boss,ST.GAME,""],
 ]
 
 texturegroup_load("ROOM_CHANGER");
