@@ -64,51 +64,22 @@ if(action_time == 1)
 	if(action_input == "left")
 	{
 		action_input = "none";
-		
-		if(position_meeting(x-global.cell_width,y,obj_block))
-		{
-			kick(x-global.cell_width,y,"left");
-		}
-		else if(!position_meeting(x-global.cell_width,y,obj_sol))
-		{
-			move(x-global.cell_width,y,"left");
-		}
+		try_move(x-global.cell_width,y,"left");
 	}
 	else if(action_input == "right")
 	{
 		action_input = "none";
-		if(position_meeting(x+global.cell_width,y,obj_block))
-		{
-			kick(x+global.cell_width,y,"right");
-		}
-		else if(!position_meeting(x+global.cell_width,y,obj_sol))
-		{
-			move(x+global.cell_width,y,"right");
-		}
+		try_move(x+global.cell_width,y,"right");
 	}
 	else if(action_input == "up")
 	{
 		action_input = "none";
-		if(position_meeting(x,y-global.cell_width,obj_block))
-		{
-			kick(x,y-global.cell_width,"up");
-		}
-		else if(!position_meeting(x,y-global.cell_width,obj_sol))
-		{
-			move(x,y-global.cell_width,"up");
-		}
+		try_move(x,y-global.cell_width,"up");
 	}
 	else if(action_input == "down")
 	{
 		action_input = "none";
-		if(position_meeting(x,y+global.cell_width,obj_block))
-		{
-			kick(x,y+global.cell_width,"down");
-		}
-		else if(!position_meeting(x,y+global.cell_width,obj_sol))
-		{
-			move(x,y+global.cell_width,"down");
-		}
+		try_move(x,y+global.cell_width,"down");
 	}
 }
 

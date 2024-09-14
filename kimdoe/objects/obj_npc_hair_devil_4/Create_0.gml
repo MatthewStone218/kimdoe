@@ -26,14 +26,14 @@ dialogue_success =
 		type: "text",
 		image: spr_dialogue_hair_devil,
 		name: "탈모의 악마",
-		text: "여기부터는 다른 악마의 영역이야.",
+		text: "너의 모발에 대한 집착은 어쩌면 나보다 더할지도 몰라.",
 		next_struct: function(){ return obj_npc_hair_devil_4.dialogue_success[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_hair_devil,
 		name: "탈모의 악마",
-		text: "안타깝지만 난 여기 남지. 이제 너 스스로 모발을 찾아가도록 해.",
+		text: "그래... 이제부터는 네가 탈모의 악마다.",
 		next_struct: function(){ return obj_npc_hair_devil_4.dialogue_success[2]; }
 	},
 	{

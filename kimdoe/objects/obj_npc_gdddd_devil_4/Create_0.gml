@@ -55,6 +55,13 @@ dialogue_success =
 		next_struct: function(){ return obj_npc_gdddd_devil_4.dialogue_success[3]; }
 	},
 	{
+		type: "text",
+		image: spr_dialogue_gdddd_devil,
+		name: "",
+		text: "...나도 알아. 네가 나보다 군똥딸에 대해 잘 아는거.\n네게 나의 자리를 넘기지. 이제 네가 군똥딸의 악마다.",
+		next_struct: function(){ return obj_npc_gdddd_devil_4.dialogue_success[4]; }
+	},
+	{
 		type: "code",
 		image: spr_dialogue_gdddd_devil,
 		name: "군똥딸의 악마",

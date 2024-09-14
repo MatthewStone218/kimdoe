@@ -110,6 +110,35 @@ function pull_hair()
 	}
 }
 
+function try_move(xx,yy,dir_str)
+{
+	if(position_meeting(xx,yy,obj_block))
+	{
+		kick(xx,yy,dir_str);
+	}
+	else if(position_meeting(xx,yy,obj_locked_block))
+	{
+		if(global.key > 0)
+		{
+			unlock_block(xx,yy);
+			move(xx,yy,dir_str);
+		}
+	}
+	else if(!position_meeting(xx,yy,obj_sol))
+	{
+		move(xx,yy,dir_str);
+	}
+}
+
+function unlock_block(xx,yy)
+{
+	var _inst = instance_place(xx,yy,obj_locked_block);
+	if(instance_exists(_inst))
+	{
+		_inst.unlock();
+	}
+}
+
 function move(xx,yy,_dir)
 {
 	instance_create_depth(x,y,depth,obj_ef_move);

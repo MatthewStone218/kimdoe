@@ -33,7 +33,7 @@ dialogue_success =
 		type: "text",
 		image: spr_dialogue_ddong_devil,
 		name: "똥겜의 악마",
-		text: "아, 난 네 앞에서 초라해지는군.",
+		text: "아, 난 네 앞에서 초라해지는군.\n네 진한 똥내가 내 존재를 지워내는 것 같아.",
 		next_struct: function(){ return obj_npc_ddong_devil_4.dialogue_success[1]; }
 	},
 	{

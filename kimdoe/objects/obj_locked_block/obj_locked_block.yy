@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_locked_block",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_locked_block",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_locked_block",
+    "path":"sprites/spr_locked_block/spr_locked_block.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

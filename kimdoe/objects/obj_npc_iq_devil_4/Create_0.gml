@@ -47,8 +47,15 @@ dialogue_success =
 		type: "text",
 		image: spr_dialogue_iq_devil,
 		name: "능지의 악마",
-		text: "그 지능으로 이 퍼즐을 풀다니, 사람들은 이걸 기적이라 부른다.\n충분히 관찰했으니 더이상 따라다니지 않으마.",
+		text: "그 지능으로 이 퍼즐을 풀다니, 이건 기적이야.",
 		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_success[2]; }
+	},
+	{
+		type: "text",
+		image: spr_dialogue_iq_devil,
+		name: "능지의 악마",
+		text: "나도 은퇴할 때가 되었군.\n지금부터는... 네가 능지의 악마다.",
+		next_struct: function(){ return obj_npc_iq_devil_4.dialogue_success[3]; }
 	},
 	{
 		type: "code",
