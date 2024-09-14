@@ -93,4 +93,6 @@ if(keyboard_check(vk_delete) and keyboard_check(vk_control) and keyboard_check(v
 	instance_destroy(obj_item_hair);
 	x = mouse_x;
 	y = mouse_y;
+	s_x = x;
+	s_y = y;
 }
