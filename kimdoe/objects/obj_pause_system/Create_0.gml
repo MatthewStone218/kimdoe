@@ -4,7 +4,7 @@
 prev_state = ST.MAIN;
 
 register_click_func(
-	function(){return global.state != ST.MAIN && input_check_pressed("pause");},
+	function(){return global.state != ST.MAIN && global.state != ST.MOVING && input_check_pressed("pause");},
 	function()
 	{
 		if(global.state == ST.PAUSE)
