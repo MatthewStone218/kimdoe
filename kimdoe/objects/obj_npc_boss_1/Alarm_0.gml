@@ -5,7 +5,7 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_,
+		image: spr_dialogue_hea,
 		name: "지 옥에서는 아무도 못 나가 해병님",
 		text: "새끼...기열!",
 		next_struct: function(){ return obj_npc_boss_1.dialogue[1]; }

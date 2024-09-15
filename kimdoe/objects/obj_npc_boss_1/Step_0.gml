@@ -7,7 +7,7 @@ if(y2 < 0)
 	if(y2 >= 0)
 	{
 		y2 = 0;
-		alarm[0] = 100;
+		alarm[0] = 70;
 		obj_camera.bib = 100;
 	}
 }
