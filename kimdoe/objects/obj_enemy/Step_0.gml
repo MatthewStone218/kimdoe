@@ -5,6 +5,11 @@ if(action_time < 1)
 {
 	action_time += 0.05;
 	
+	if(action == "kicked")
+	{
+		image_index = action_time*sprite_get_number(sprite_index);
+	}
+	
 	if(action_time >= 1)
 	{
 		action_time = 1;
@@ -13,6 +18,8 @@ if(action_time < 1)
 		{
 			set_position();
 		}
+		
+		sprite_index = spr_enemy;
 		
 		action = "none";
 	}

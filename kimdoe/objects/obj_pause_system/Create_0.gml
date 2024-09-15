@@ -11,14 +11,18 @@ register_click_func(
 		{
 			global.state = prev_state;
 			obj_ui_pause_resume.focused = true;
+			obj_ui_pause_resume.focus();
 			obj_ui_pause_goto_main.focused = false;
+			obj_ui_pause_goto_main.lose_focus();
 		}
 		else
 		{
 			prev_state = global.state;
 			global.state = ST.PAUSE;
 			obj_ui_pause_resume.focused = true;
+			obj_ui_pause_resume.focus();
 			obj_ui_pause_goto_main.focused = false;
+			obj_ui_pause_goto_main.lose_focus();
 		}
 	}
 )

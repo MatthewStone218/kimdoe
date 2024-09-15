@@ -20,18 +20,22 @@ function kicked(dir)
 		case "left":
 			xx = x-global.cell_width;
 			yy = y;
+			sprite_index = spr_enemy_hit_left;
 		break;
 		case "right":
 			xx = x+global.cell_width;
 			yy = y;
+			sprite_index = spr_enemy_hit_right;
 		break;
 		case "up":
 			xx = x;
 			yy = y-global.cell_width;
+			sprite_index = spr_enemy_hit_up;
 		break;
 		case "down":
 			xx = x;
 			yy = y+global.cell_width;
+			sprite_index = spr_enemy_hit_down;
 		break;
 	}
 	

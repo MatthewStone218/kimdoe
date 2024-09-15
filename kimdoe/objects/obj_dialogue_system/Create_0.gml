@@ -34,7 +34,7 @@ function set_dialogue(struct)
 	
 	if(variable_struct_exists(struct_now,"no_belt") and struct_now.no_belt)
 	{
-		instance_destroy(obj_ui_dialogue_bg_1);
+		instance_destroy(obj_ui_dialogue_bg_2);
 		instance_destroy(obj_ui_dialogue_bg_3);
 	}
 	
