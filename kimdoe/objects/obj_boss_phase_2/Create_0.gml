@@ -140,7 +140,7 @@ function check_collision_with_player()
 	return _result;
 }
 
-start_cooltime();
+//start_cooltime();
 
 dialogue = 
 [

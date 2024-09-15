@@ -39,9 +39,9 @@ function get_neighbor_number()
 		+ get_is_in_range(0,-1)
 		+ get_is_in_range(0,1)
 		
-		+ ((get_is_in_range(-1,0) || get_is_in_range(0,-1)) && get_is_in_range(-1,-1))
-		+ ((get_is_in_range(1,0) || get_is_in_range(0,-1)) && get_is_in_range(1,-1))
-		+ ((get_is_in_range(-1,0) || get_is_in_range(0,1)) && get_is_in_range(-1,1))
-		+ ((get_is_in_range(1,0) || get_is_in_range(0,1)) && get_is_in_range(1,1))
+		+ (get_is_in_range(-1,0) && get_is_in_range(0,-1) && get_is_in_range(-1,-1))
+		+ (get_is_in_range(1,0) && get_is_in_range(0,-1) && get_is_in_range(1,-1))
+		+ (get_is_in_range(-1,0) && get_is_in_range(0,1) && get_is_in_range(-1,1))
+		+ (get_is_in_range(1,0) && get_is_in_range(0,1) && get_is_in_range(1,1))
 	)
 }
