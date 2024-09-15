@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera",
+  "%Name":"obj_npc_boss_1",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_camera",
+  "name":"obj_npc_boss_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"npc",
+    "path":"folders/Objects/game/npc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_npc_hea",
+    "path":"sprites/spr_npc_hea/spr_npc_hea.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera",
+  "%Name":"obj_portal",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_camera",
+  "name":"obj_portal",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"npc",
+    "path":"folders/Objects/game/npc.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npc",
+    "path":"objects/obj_npc/obj_npc.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_portal",
+    "path":"sprites/spr_portal/spr_portal.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
