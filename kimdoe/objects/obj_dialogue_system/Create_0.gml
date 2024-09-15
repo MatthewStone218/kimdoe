@@ -40,6 +40,11 @@ function set_dialogue(struct)
 				instance_destroy(obj_ui_dialogue_character);
 				instance_create_depth(960,540,-440,obj_ui_dialogue_character,{sprite_index: struct_now.image});
 			}
+			
+			if(variable_struct_exists(struct_now,"image_is_upper") and struct_now.image_is_upper)
+			{
+				obj_ui_dialogue_character.depth = -460;
+			}
 		}
 		else
 		{
