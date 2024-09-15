@@ -35,7 +35,7 @@ function get_hit()
 		
 		if(hp <= 50)
 		{
-			obj_dialogue_system.set_dialogue(dialogue);
+			obj_dialogue_system.set_dialogue(dialogue[0]);
 		}
 	}
 }
