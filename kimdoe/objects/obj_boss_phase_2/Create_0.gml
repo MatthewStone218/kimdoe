@@ -29,7 +29,7 @@ function get_hit()
 		image_blend = c_red;
 		hp -= 5;
 		instance_create_depth(x,y,depth-100,obj_ef_kick);
-		obj_camera.bib = 20;
+		obj_camera.bib = 60;
 		action_time = 0;
 		start_cooltime();
 		

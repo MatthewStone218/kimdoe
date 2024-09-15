@@ -3,7 +3,7 @@
 
 alarm[0] = random_range(300,1200);
 
-if(!position_meeting(x,y,obj_hair) && !position_meeting(x,y,obj_item_hair) && !position_meeting(x,y,obj_player))
+if((instance_number(obj_item_hair)+instance_number(obj_hair) < 15) && !position_meeting(x,y,obj_hair) && !position_meeting(x,y,obj_item_hair) && !position_meeting(x,y,obj_player))
 {
 	instance_create_depth(x,y,-y+100,obj_item_hair);
 }

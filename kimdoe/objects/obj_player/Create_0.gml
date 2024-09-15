@@ -53,6 +53,11 @@ function kill_self()
 	}
 	else
 	{
+		with(obj_hair)
+		{
+			die(false);
+		}
+		
 		die();
 	}
 }
@@ -223,7 +228,7 @@ function move(xx,yy,_dir)
 				
 				with(obj_player_attack_tile)
 				{
-					if(get_neighbor_number() <= 2)
+					if(get_neighbor_number() <= 3)
 					{
 						no_spike = true;
 					}
