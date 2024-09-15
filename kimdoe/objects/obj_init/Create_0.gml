@@ -19,6 +19,7 @@ global.keyboard_visible = 0;
 
 global.cell_width = 64;
 global.player_action_speed = 0.05;
+global.player_can_attack = false;
 
 global.state = ST.MAIN;
 
