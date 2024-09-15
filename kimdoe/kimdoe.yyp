@@ -735,6 +735,7 @@
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_ui_button_quit_game","path":"sprites/spr_ui_button_quit_game/spr_ui_button_quit_game.yy",},},
     {"id":{"name":"spr_ui_button_start_game","path":"sprites/spr_ui_button_start_game/spr_ui_button_start_game.yy",},},
+    {"id":{"name":"spr_ui_dialogue_bg_0","path":"sprites/spr_ui_dialogue_bg_0/spr_ui_dialogue_bg_0.yy",},},
     {"id":{"name":"spr_ui_dialogue_bg_1","path":"sprites/spr_ui_dialogue_bg_1/spr_ui_dialogue_bg_1.yy",},},
     {"id":{"name":"spr_ui_dialogue_bg_2","path":"sprites/spr_ui_dialogue_bg_2/spr_ui_dialogue_bg_2.yy",},},
     {"id":{"name":"spr_ui_dialogue_bg_3","path":"sprites/spr_ui_dialogue_bg_3/spr_ui_dialogue_bg_3.yy",},},

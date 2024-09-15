@@ -14,6 +14,11 @@ function set_dialogue(struct)
 		instance_create_depth(0,0,-400,obj_ui_dialogue_bg_1);
 		instance_create_depth(0,0,-410,obj_ui_dialogue_bg_2);
 		instance_create_depth(0,0,-450,obj_ui_dialogue_bg_3);
+		
+		if(variable_struct_exists(struct_now,"bg"))
+		{
+			obj_ui_dialogue_bg_1.sprite_index = struct_now.bg;
+		}
 	}
 
 	instance_destroy(obj_ui_dialogue_text);
