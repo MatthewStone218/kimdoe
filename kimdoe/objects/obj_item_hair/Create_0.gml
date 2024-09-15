@@ -10,3 +10,11 @@ function gain()
 	
 	instance_destroy();
 }
+
+function set_scale(_time)
+{
+	image_xscale = ease_get_val(ease_out_cubic(_time),0,1);
+	image_yscale = ease_get_val(ease_out_cubic(_time),0,1);
+}
+
+time = 0;

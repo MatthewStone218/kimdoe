@@ -4,6 +4,9 @@
 alarm[0] = 60*30;
 
 global.player_action_speed = 0.1;
+global.player_can_attack = false;
+
+hp = 100;
 
 action_speed = 1;
 
@@ -17,6 +20,8 @@ x_prev = x;
 y_prev = y;
 x_goal = x;
 y_goal = y;
+
+function get_hit(){}
 
 function start_cooltime()
 {

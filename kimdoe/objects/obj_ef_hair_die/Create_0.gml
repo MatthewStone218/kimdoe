@@ -1,5 +1,8 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
+
+if(global.player_can_attack){ sprite_index = spr_ef_hair_die_black; }
+
 image_speed = 0;
 direction = random(360);
 speed = random_range(3,10);

@@ -90,9 +90,5 @@ set_hair_pos();
 //debug
 if(keyboard_check(vk_delete) and keyboard_check(vk_control) and keyboard_check(vk_home))
 {
-	instance_destroy(obj_item_hair);
-	x = mouse_x;
-	y = mouse_y;
-	s_x = x;
-	s_y = y;
+	room_goto_f(rm_stage_boss_phase_1, ST.GAME);
 }

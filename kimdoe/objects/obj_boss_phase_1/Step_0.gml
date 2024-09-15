@@ -47,3 +47,5 @@ if(global.state == ST.GAME)
 		obj_player.kill_self();
 	}
 }
+
+depth = -y;

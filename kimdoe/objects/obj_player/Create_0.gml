@@ -179,12 +179,15 @@ function move(xx,yy,_dir)
 		var _inst = instance_place(xx,yy,obj_hair);
 		if(_inst.hair_index == 1)
 		{
-			global.state = ST.DYING;
+			if(!global.player_can_attack)
+			{
+				global.state = ST.DYING;
+				instance_create_depth(x,y,-10000,obj_ef_player_die);
+			}
 			with(_inst)
 			{
 				die(true);
 			}
-			instance_create_depth(x,y,-10000,obj_ef_player_die);
 		}
 	}
 				
@@ -195,12 +198,40 @@ function move(xx,yy,_dir)
 	
 	if(position_meeting(xx,yy,obj_hair))
 	{
-		global.state = ST.DYING;
-		with(instance_place(xx,yy,obj_hair))
+		if(!global.player_can_attack)
 		{
-			die(true);
+			global.state = ST.DYING;
+			with(instance_place(xx,yy,obj_hair))
+			{
+				die(true);
+			}
+			instance_create_depth(x,y,-10000,obj_ef_player_die);
 		}
-		instance_create_depth(x,y,-10000,obj_ef_player_die);
+		else
+		{
+			with(obj_hair)
+			{
+				with(obj_player_attack_tile)
+				{
+					reset();
+				}
+				
+				with(obj_player_attack_tile_start_point)
+				{
+					check();
+				}
+				
+				with(obj_player_attack_tile)
+				{
+					if(is_in_range)
+					{
+						instance_create_depth(x,y,-y+300,obj_player_attack_spike);
+					}
+				}
+				
+				die(false);
+			}
+		}
 	}
 	
 	with(obj_npc)
