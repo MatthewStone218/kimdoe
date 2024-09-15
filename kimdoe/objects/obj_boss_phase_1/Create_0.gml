@@ -218,8 +218,15 @@ dialogue =
 		next_struct: function(){ return obj_boss_phase_1.dialogue[14]; }
 	},
 	{
+		type: "text",
+		image: spr_dialogue_hea,
+		name: "지  옥에서는 아무도 못 나가 해병님",
+		text: "해병대에 적합한 몸을 하고도 입영하지 않은 탈영병이 하나 더 있다니!\n새끼...기열!",
+		next_struct: function(){ return obj_boss_phase_1.dialogue[15]; }
+	},
+	{
 		type: "code",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_hea,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_2, ST.GAME);
 		}
