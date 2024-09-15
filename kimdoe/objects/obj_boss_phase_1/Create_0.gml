@@ -146,7 +146,7 @@ dialogue =
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
-		text: "젠장... 어떻게 해야 이녀석을 떨쳐버릴 수 있지?",
+		text: "젠장... 어떻게 해야 이녀석을 해치울 수 있지?\n발로 차려고 다가갔다간 따이고 말거야...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[5]; }
 	},
 	{
