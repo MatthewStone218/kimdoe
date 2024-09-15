@@ -49,7 +49,7 @@ dialogue_success =
 		name: "똥겜의 악마",
 		func: function(){
 			unlock_stage(18);
-			room_goto_f(rm_stage_17, ST.GAME);
+			room_goto_f(rm_stage_boss_intro, ST.GAME);
 		}
 	}
 ]
