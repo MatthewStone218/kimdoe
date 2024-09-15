@@ -4,7 +4,7 @@ LIVE
 
 if(action_time < 1)
 {
-	action_time += 0.05;
+	action_time += global.player_action_speed;
 	image_index = action_time*sprite_get_number(sprite_index);
 	
 	if(action_time >= 1)

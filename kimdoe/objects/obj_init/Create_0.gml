@@ -18,6 +18,7 @@ global.keyboard_kr = 1;
 global.keyboard_visible = 0;
 
 global.cell_width = 64;
+global.player_action_speed = 0.05;
 
 global.state = ST.MAIN;
 
