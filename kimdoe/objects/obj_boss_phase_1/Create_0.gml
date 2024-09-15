@@ -214,7 +214,7 @@ dialogue =
 	},
 	{
 		type: "code",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_player_1,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_2, ST.GAME);
 		}
