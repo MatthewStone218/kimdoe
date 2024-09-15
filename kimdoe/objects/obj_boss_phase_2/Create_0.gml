@@ -149,14 +149,14 @@ dialogue =
 		image: spr_dialogue_hea,
 		name: "지  옥에서는 아무도 못 나가 해병님",
 		text: "아쎄이! 지금이라도 전우애를 실시하겠다면 용서해 줄 수 있다!",
-		next_struct: function(){ return obj_boss_phase_1.dialogue[1]; }
+		next_struct: function(){ return obj_boss_phase_2.dialogue[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
 		text: "지랄마! 난 널 죽이고 여길 나가겠어!",
-		next_struct: function(){ return obj_boss_phase_1.dialogue[2]; }
+		next_struct: function(){ return obj_boss_phase_2.dialogue[2]; }
 	},
 	{
 		type: "code",
