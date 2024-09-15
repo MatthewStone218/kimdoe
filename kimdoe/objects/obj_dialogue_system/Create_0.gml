@@ -30,7 +30,11 @@ function set_dialogue(struct)
 				_spr = sprite_index;
 			}
 			
-			if(_spr != struct_now.image){instance_create_depth(960,540,-440,obj_ui_dialogue_character,{sprite_index: struct_now.image});}
+			if(_spr != struct_now.image)
+			{
+				instance_destroy(obj_ui_dialogue_character);
+				instance_create_depth(960,540,-440,obj_ui_dialogue_character,{sprite_index: struct_now.image});
+			}
 		}
 		else
 		{
