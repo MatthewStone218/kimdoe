@@ -41,7 +41,7 @@ function kill_self()
 	
 	instance_create_depth(x,y,-10000,obj_ef_player_die);
 	
-	if(instance_exists(obj_hair))
+	if(instance_exists(obj_hair) && !global.player_can_attack)
 	{
 		with(obj_hair)
 		{
@@ -221,6 +221,19 @@ function move(xx,yy,_dir)
 					check();
 				}
 				
+				with(obj_player_attack_tile)
+				{
+					if(get_neighbor_number() <= 2)
+					{
+						no_spike = true;
+					}
+				}
+				
+				with(obj_player_attack_tile)
+				{
+					if(no_spike){is_in_range = false;}
+				}
+					
 				with(obj_player_attack_tile)
 				{
 					if(is_in_range)

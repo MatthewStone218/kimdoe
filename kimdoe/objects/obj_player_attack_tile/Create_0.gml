@@ -3,11 +3,13 @@
 
 is_in_range = true;
 checked = false;
+no_spike = false;
 
 function reset()
 {
 	is_in_range = true;
 	checked = false;
+	no_spike = false;
 }
 
 function check()
@@ -22,4 +24,14 @@ function check()
 		if(position_meeting(x,y-global.cell_width,obj_player_attack_tile)){instance_place(x,y-global.cell_width,obj_player_attack_tile).check();}
 		if(position_meeting(x,y+global.cell_width,obj_player_attack_tile)){instance_place(x,y+global.cell_width,obj_player_attack_tile).check();}
 	}
+}
+
+function get_neighbor_number()
+{
+	return (
+		(position_meeting(x-global.cell_width,y,obj_player_attack_tile) && instance_place(x-global.cell_width,y,obj_player_attack_tile).is_in_range)
+		+ (position_meeting(x+global.cell_width,y,obj_player_attack_tile) && instance_place(x+global.cell_width,y,obj_player_attack_tile).is_in_range)
+		+ (position_meeting(x,y-global.cell_width,obj_player_attack_tile) && instance_place(x,y-global.cell_width,obj_player_attack_tile).is_in_range)
+		+ (position_meeting(x,y+global.cell_width,obj_player_attack_tile) && instance_place(x,y+global.cell_width,obj_player_attack_tile).is_in_range)
+	)
 }
