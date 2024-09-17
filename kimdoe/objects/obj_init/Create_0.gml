@@ -23,12 +23,6 @@ global.player_can_attack = false;
 
 global.state = ST.MAIN;
 
-ini_open("save.ini");
-
-global.cleared_stage = ini_read_real("system","cleared_stage",0);
-
-ini_close();
-
 global.stage_arr =
 [
 	[rm_prologue,ST.DIALOGUE,"프롤로그"],

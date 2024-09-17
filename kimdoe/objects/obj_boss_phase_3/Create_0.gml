@@ -95,6 +95,7 @@ function start_block_attack()
 	action = "block_attack";
 	total_action_time = 120;
 	sprite_index = spr_boss_stomp_2;
+	instance_create_depth(x,y,0,obj_ef_crack);
 	
 	obj_camera.bib = 50;
 	
