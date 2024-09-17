@@ -311,7 +311,7 @@ dialogue =
 		type: "code",
 		image: spr_dialogue_player_1,
 		func: function(){
-			room_goto_f(rm_stage_ending, ST.GAME);
+			room_goto_f(rm_ending, ST.DIALOGUE);
 		}
 	}
 ];
