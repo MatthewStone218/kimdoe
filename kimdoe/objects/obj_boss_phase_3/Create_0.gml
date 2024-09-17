@@ -1,7 +1,7 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
-hp = 100;
+hp = 50;
 
 global.player_action_speed = 0.1;
 global.player_can_attack = true;
@@ -88,7 +88,7 @@ function start_block_attack()
 	total_action_time = 120;
 	with(obj_boss_block_attack_tile)
 	{
-		if(choose(true,false,false,false,false,false,false,false,false))
+		if(choose(true,false,false,false,false,false,false,false,false,false,false,false))
 		{
 			instance_create_depth(x,y,-y,obj_falling_block_bossfight);
 		}
