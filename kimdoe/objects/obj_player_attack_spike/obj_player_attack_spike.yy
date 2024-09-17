@@ -35,6 +35,9 @@
     "name":"spr_player_attack_spike",
     "path":"sprites/spr_player_attack_spike/spr_player_attack_spike.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_sol",
+    "path":"sprites/spr_sol/spr_sol.yy",
+  },
   "visible":true,
 }
