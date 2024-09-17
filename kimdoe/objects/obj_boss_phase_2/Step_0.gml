@@ -16,6 +16,15 @@ if(global.state == ST.GAME)
 		case "rush_attack":
 			rush_attack();
 		break;
+		case "rush_for_helicopter":
+			rush_attack();
+		break;
+		case "helicopter_attack_1":
+			helicopter_attack_1();
+		break;
+		case "helicopter_attack_2":
+			helicopter_attack_2();
+		break;
 	}
 
 	if(action_time == 1)
@@ -25,14 +34,7 @@ if(global.state == ST.GAME)
 		switch(action)
 		{
 			case "cooltime":
-				if(choose(true,false) && !(x == obj_player.x || y == obj_player.y))
-				{
-					start_ready_rush_attack_1();
-				}
-				else
-				{
-					start_ready_rush_attack_2();
-				}
+				start_random_action();
 			break;
 		
 			case "ready_rush_attack":
@@ -41,6 +43,26 @@ if(global.state == ST.GAME)
 		
 			case "rush_attack":
 				start_cooltime();
+			break;
+			
+			case "helicopter_attack_2":
+				end_helicopter_attack();
+			break;
+			
+			case "ready_helicopter_1":
+				start_rush_for_helicopter();
+			break;
+			
+			case "rush_for_helicopter":
+				start_ready_helicopter_2();
+			break;
+			
+			case "ready_helicopter_2":
+				start_helicopter_attack_1();
+			break;
+			
+			case "helicopter_attack_1":
+				start_helicopter_attack_2();
 			break;
 		}
 	}

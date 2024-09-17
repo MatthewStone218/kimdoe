@@ -122,36 +122,36 @@ dialogue =
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "새끼...기열!",
+		name: "모발의 요정",
+		text: "잘도 도망다니는구나.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "용서해주겠다고 했음에도 불구하고\n전우애를 실시하지 않고 도망다니는 찐빠를 내다니...",
+		name: "모발의 요정",
+		text: "모근을 상납하면 보내주겠다고 했음에도 불구하고\n도망다니는 찐빠를 내다니...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[2]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "이는 명백한 하극상이다!",
+		name: "모발의 요정",
+		text: "그래봤자 너는 영원히 나를 공격할 수 없어.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[3]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "따라서 네놈을 해병 수육으로 가공함으로써 처벌하도록 하겠다!",
+		name: "모발의 요정",
+		text: "누군가 죽을 때까지 싸운다면, 결국 내 승리가 되겠지.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[4]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
-		text: "젠장... 어떻게 해야 이녀석을 해치울 수 있지?\n발로 차려고 다가갔다간 따이고 말거야...",
+		text: "젠장... 어떻게 해야 이녀석을 해치울 수 있지?\n발로 차려고 다가갔다간 오히려 내가 따이고 말거야.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[5]; }
 	},
 	{
@@ -193,7 +193,7 @@ dialogue =
 		type: "text",
 		image: spr_dialogue_hair_devil,
 		name: "전 탈모의 악마",
-		text: "네 머리카락으로 저녀석을 감싸라.\n그러면 녀석을 공격할 수 있어.",
+		text: "네 머리카락으로 저녀석을 감싸라.\n그러면 공격할 수 있어.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[11]; }
 	},
 	{
@@ -220,8 +220,8 @@ dialogue =
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "해병대에 적합한 몸을 하고도 입영하지 않은 탈영병이 하나 더 있다니!\n새끼...기열!",
+		name: "모발의 요정",
+		text: "이런, 방해꾼이 등장했군...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[15]; }
 	},
 	{

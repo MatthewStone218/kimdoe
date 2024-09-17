@@ -21,6 +21,10 @@ y_goal = y;
 
 hit = 0;
 
+helicopter_max_dis = 400;
+helicopter_dis = 0;
+helicopter_dir = 0;
+
 function get_hit()
 {
 	if(hit <= 0)
@@ -30,8 +34,6 @@ function get_hit()
 		hp -= 5;
 		instance_create_depth(x,y,depth-100,obj_ef_kick);
 		obj_camera.bib = 60;
-		action_time = 0;
-		start_cooltime();
 		
 		if(hp <= 50)
 		{
@@ -48,10 +50,106 @@ function set_blend()
 	image_blend = make_color_rgb(_red,_green,_blue);
 }
 
+function start_random_action()
+{
+	if(choose(true,false) && !(x == obj_player.x || y == obj_player.y))
+	{
+		start_ready_rush_attack_1();
+	}
+	else if(choose(true,true,true,false))
+	{
+		start_ready_rush_attack_2();
+	}
+	else
+	{
+		start_ready_helicopter_1()
+	}
+}
+
 function start_cooltime()
 {
 	action = "cooltime";
 	total_action_time = irandom_range(20,100);
+}
+
+function start_ready_helicopter_1()
+{
+	action = "ready_helicopter_1";
+	total_action_time = 20;
+	
+	helicopter_dir = 0;
+	helicopter_dis = 0;
+	
+	var _x = 448+32;
+	var _y = 256+32;
+	
+	var _dir = point_direction(x,y,_x,_y);
+	var _dis = point_distance(x,y,_x,_y);
+	
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	_inst.image_angle = _dir;
+	_inst.image_xscale = _dis+32;
+	
+	x_prev = x;
+	y_prev = y;
+	
+	x_goal = _x;
+	y_goal = _y;
+}
+
+function start_ready_helicopter_2()
+{
+	action = "ready_helicopter_2";
+	total_action_time = 60;
+	
+	for(var _dir = 0; _dir < 360; _dir += 90)
+	{
+		var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+		_inst.image_angle = _dir;
+		_inst.image_xscale = helicopter_max_dis-32;
+	}
+}
+
+function start_rush_for_helicopter()
+{
+	action = "rush_for_helicopter";
+	total_action_time = 10;
+}
+
+function start_helicopter_attack_1()
+{
+	action = "helicopter_attack_1";
+	total_action_time = 10;
+	for(var _dir = 0; _dir < 360; _dir += 90)
+	{
+		instance_create_depth(x,y,-4000,obj_boss_attack_helicopter_hair,{dir: _dir});
+	}
+}
+
+function helicopter_attack_1()
+{
+	helicopter_dis = ease_get_val(ease_out_cubic(action_time),0,helicopter_max_dis);
+}
+
+function start_helicopter_attack_2()
+{
+	action = "helicopter_attack_2";
+	total_action_time = 60*8;
+	
+	helicopter_dir_spd = 0;
+}
+
+function helicopter_attack_2()
+{
+	helicopter_dir += helicopter_dir_spd;
+	helicopter_dir_spd += 0.01;
+	helicopter_dir_spd = min(1.8,helicopter_dir_spd);
+}
+
+function end_helicopter_attack()
+{
+	start_cooltime();
+	instance_destroy(obj_boss_attack_helicopter_hair);
 }
 
 function start_ready_rush_attack_1()
@@ -147,15 +245,15 @@ dialogue =
 	{
 		type: "text",
 		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "아쎄이! 지금이라도 전우애를 실시하겠다면 용서해 줄 수 있다!",
+		name: "모발의 요정",
+		text: "이제 봐주지 않을거야.",
 		next_struct: function(){ return obj_boss_phase_2.dialogue[1]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_player_1,
-		name: "김도",
-		text: "지랄마! 난 널 죽이고 여길 나가겠어!",
+		image: spr_dialogue_hea,
+		name: "모발의 요정",
+		text: "순순히 모근을 내놓고 죽어!",
 		next_struct: function(){ return obj_boss_phase_2.dialogue[2]; }
 	},
 	{
