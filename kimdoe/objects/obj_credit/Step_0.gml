@@ -12,7 +12,7 @@ if(fade_step == 0)
 else if(fade_step == 1)
 {
 	image_alpha -= 0.01;
-	if(image_alpha <= -2)
+	if(image_alpha <= 0)
 	{
 		fade_step = 0;
 		num++;
