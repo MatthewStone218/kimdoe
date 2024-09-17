@@ -42,6 +42,7 @@ if(global.state == ST.GAME)
 			break;
 		
 			case "rush_attack":
+			case "block_attack":
 				start_cooltime();
 			break;
 			
@@ -63,6 +64,10 @@ if(global.state == ST.GAME)
 			
 			case "helicopter_attack_1":
 				start_helicopter_attack_2();
+			break;
+			
+			case "ready_block_attack":
+				start_block_attack();
 			break;
 		}
 	}

@@ -121,6 +121,10 @@ function try_move(xx,yy,dir_str)
 	{
 		kick_block(xx,yy,dir_str);
 	}
+	else if(position_meeting(xx,yy,obj_block_bossfight))
+	{
+		kick_block_bossfight(xx,yy,dir_str);
+	}
 	else if(position_meeting(xx,yy,obj_enemy))
 	{
 		kick_enemy(xx,yy,dir_str);
@@ -288,6 +292,15 @@ function kick_block(xx,yy,_dir)
 	{
 		kill_self();
 	}
+}
+
+function kick_block_bossfight(xx,yy,_dir)
+{
+	instance_create_depth(xx,yy,depth-1000,obj_ef_kick);
+
+	play_kick_ani(_dir);
+
+	instance_position(xx,yy,obj_block).kicked(_dir);
 }
 
 function kick_enemy(xx,yy,_dir)

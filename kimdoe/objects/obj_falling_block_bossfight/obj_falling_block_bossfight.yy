@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss_phase_3",
+  "%Name":"obj_falling_block_bossfight",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_block_bossfight","path":"objects/obj_block_bossfight/obj_block_bossfight.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss_phase_3",
+  "name":"obj_falling_block_bossfight",
   "overriddenProperties":[],
   "parent":{
     "name":"boss_battle",
     "path":"folders/Objects/game/boss_battle.yy",
   },
-  "parentObjectId":{
-    "name":"obj_boss",
-    "path":"objects/obj_boss/obj_boss.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_hea",
-    "path":"sprites/spr_npc_hea/spr_npc_hea.yy",
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -56,13 +56,17 @@ function start_random_action()
 	{
 		start_ready_rush_attack_1();
 	}
-	else if(choose(true,true,true,false))
+	else if(choose(true,false))
 	{
 		start_ready_rush_attack_2();
 	}
-	else
+	else if(choose(true, false))
 	{
 		start_ready_helicopter_1()
+	}
+	else
+	{
+		start_ready_block_attack();
 	}
 }
 
@@ -70,6 +74,25 @@ function start_cooltime()
 {
 	action = "cooltime";
 	total_action_time = irandom_range(20,100);
+}
+
+function start_ready_block_attack()
+{
+	action = "ready_block_attack";
+	total_action_time = 30;
+}
+
+function start_block_attack()
+{
+	action = "block_attack";
+	total_action_time = 180;
+	with(obj_boss_block_attack_tile)
+	{
+		if(choose(true,false,false,false,false))
+		{
+			instance_create_depth(x,y,-y,obj_falling_block_bossfight);
+		}
+	}
 }
 
 function start_ready_helicopter_1()
