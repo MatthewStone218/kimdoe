@@ -1,23 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss_phase_3",
+  "%Name":"obj_ef_boss_die_2",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_block_bossfight","path":"objects/obj_block_bossfight/obj_block_bossfight.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss_phase_3",
+  "name":"obj_ef_boss_die_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"boss_battle",
-    "path":"folders/Objects/game/boss_battle.yy",
+    "name":"ef",
+    "path":"folders/Objects/game/ef.yy",
   },
-  "parentObjectId":{
-    "name":"obj_boss",
-    "path":"objects/obj_boss/obj_boss.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,12 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss_idle",
-    "path":"sprites/spr_boss_idle/spr_boss_idle.yy",
+    "name":"spr_ef_player_die",
+    "path":"sprites/spr_ef_player_die/spr_ef_player_die.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_boss_idle",
-    "path":"sprites/spr_boss_idle/spr_boss_idle.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

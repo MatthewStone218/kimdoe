@@ -55,9 +55,8 @@ function start_ready_rush_attack_1()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -77,9 +76,8 @@ function start_ready_rush_attack_2()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;

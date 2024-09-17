@@ -1,7 +1,7 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
-hp = 50;
+hp = 1;
 
 global.player_action_speed = 0.1;
 global.player_can_attack = true;
@@ -25,19 +25,21 @@ helicopter_max_dis = 400;
 helicopter_dis = 0;
 helicopter_dir = 0;
 
+blink = false;
+
 function get_hit()
 {
 	if(hit <= 0)
 	{
 		hit = 30;
-		image_blend = c_red;
 		hp -= 5;
 		instance_create_depth(x,y,depth-100,obj_ef_kick);
 		obj_camera.bib = 60;
 		
 		if(hp <= 0)
 		{
-			obj_dialogue_system.set_dialogue(dialogue[0]);
+			global.state = ST.SCENE_BOSS_DIE;
+			instance_create_depth(0,0,-100000,obj_ef_boss_die);
 		}
 	}
 }
@@ -127,9 +129,8 @@ function start_ready_helicopter_1()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis+32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -145,9 +146,8 @@ function start_ready_helicopter_2()
 	
 	for(var _dir = 0; _dir < 360; _dir += 90)
 	{
-		var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+		var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir)-32,-3000,obj_ef_boss_attack_range_2, {image_xscale: helicopter_max_dis-32});
 		_inst.image_angle = _dir;
-		_inst.image_xscale = helicopter_max_dis-32;
 	}
 }
 
@@ -219,9 +219,8 @@ function start_ready_rush_attack_1()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -241,9 +240,8 @@ function start_ready_rush_attack_2()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -335,7 +333,7 @@ dialogue =
 	},
 	{
 		type: "code",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_hair_fairy,
 		func: function(){
 			room_goto_f(rm_ending, ST.DIALOGUE);
 		}
