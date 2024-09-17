@@ -101,7 +101,7 @@ function start_rush_attack()
 
 function rush_attack()
 {
-	image_index = ease_get_val(action_time,x_prev,x_goal);
+	image_index = ease_get_val(action_time,0,sprite_get_number(sprite_index));
 	
 	instance_create_depth(x,y,depth+300,obj_ef_move);
 	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);

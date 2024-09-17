@@ -82,12 +82,22 @@ function start_ready_block_attack()
 {
 	action = "ready_block_attack";
 	total_action_time = 30;
+	sprite_index = spr_boss_stomp_1;
+}
+
+function ready_block_attack()
+{
+	image_index = ease_get_val(action_time,0,sprite_get_number(sprite_index));
 }
 
 function start_block_attack()
 {
 	action = "block_attack";
 	total_action_time = 120;
+	sprite_index = spr_boss_stomp_1;
+	
+	obj_camera.bib = 50;
+	
 	with(obj_boss_block_attack_tile)
 	{
 		if(choose(true,false,false,false,false,false,false,false,false,false,false,false))
@@ -95,6 +105,11 @@ function start_block_attack()
 			instance_create_depth(x,y,-y,obj_falling_block_bossfight);
 		}
 	}
+}
+
+function block_attack()
+{
+	image_index = ease_get_val(action_time,0,sprite_get_number(sprite_index));
 }
 
 function start_ready_helicopter_1()

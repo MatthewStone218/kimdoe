@@ -25,6 +25,13 @@ if(global.state == ST.GAME)
 		case "helicopter_attack_2":
 			helicopter_attack_2();
 		break;
+		case "ready_block_attack":
+			ready_block_attack();
+		break;
+		case "block_attack":
+			block_attack();
+		break;
+		
 	}
 
 	if(action_time == 1)

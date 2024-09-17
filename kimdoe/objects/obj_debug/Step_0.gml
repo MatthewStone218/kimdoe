@@ -3,5 +3,5 @@
 //debug
 if(keyboard_check(vk_delete) and keyboard_check(vk_control) and keyboard_check(vk_home))
 {
-	room_goto_f(rm_stage_boss_phase_2, ST.GAME);
+	room_goto_f(rm_stage_boss_phase_3, ST.GAME);
 }
