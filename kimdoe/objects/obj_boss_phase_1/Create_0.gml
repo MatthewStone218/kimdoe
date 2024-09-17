@@ -131,28 +131,28 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "잘도 도망다니는구나.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[1]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "모근을 상납하면 보내주겠다고 했음에도 불구하고\n도망다니는 찐빠를 내다니...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[2]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "그래봤자 너는 영원히 나를 공격할 수 없어.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[3]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "누군가 죽을 때까지 싸운다면, 결국 내 승리가 되겠지.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[4]; }
@@ -229,14 +229,14 @@ dialogue =
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "이런, 방해꾼이 등장했군...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[15]; }
 	},
 	{
 		type: "code",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_2, ST.GAME);
 		}

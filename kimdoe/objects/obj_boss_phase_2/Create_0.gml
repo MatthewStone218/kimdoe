@@ -256,14 +256,14 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "이제 봐주지 않을거야.",
 		next_struct: function(){ return obj_boss_phase_2.dialogue[1]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "순순히 모근을 내놓고 죽어!",
 		next_struct: function(){ return obj_boss_phase_2.dialogue[2]; }

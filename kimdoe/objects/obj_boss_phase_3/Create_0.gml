@@ -1,7 +1,7 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
-hp = 50;
+hp = 1;
 
 global.player_action_speed = 0.1;
 global.player_can_attack = true;
@@ -293,45 +293,45 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "윽.. 내가.. 지다니...",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[1]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[1]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
 		text: "네 모발을 가져가도록 하지.",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[2]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[2]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "그것만은 안돼..!!",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[3]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[3]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
 		text: "너는 이제 탈모의 요정이다.",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[4]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[4]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "크아아악!!",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[5]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[5]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "",
 		text: "(당신은 그의 모발을 모두 뜯어갔다.)",
-		next_struct: function(){ return obj_boss_phase_2.dialogue[6]; }
+		next_struct: function(){ return obj_boss_phase_3.dialogue[6]; }
 	},
 	{
 		type: "code",

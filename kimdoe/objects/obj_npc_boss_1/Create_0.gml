@@ -6,7 +6,7 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "안녕? 모발을 많이 모았구나.",
 		next_struct: function(){ return obj_npc_boss_1.dialogue[1]; }
@@ -20,7 +20,7 @@ dialogue =
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "내가 처음에 말했지? 모근을 되찾아가려던 모든 사람이 실패했다고.\n왜 그랬을 것 같아?",
 		next_struct: function(){ return obj_npc_boss_1.dialogue[3]; }
@@ -34,14 +34,14 @@ dialogue =
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "모발의 요정",
 		text: "그래. 네가 생각하는게 맞아.\n이제 네 모발을 모두 내놔.",
 		next_struct: function(){ return obj_npc_boss_1.dialogue[5]; }
 	},
 	{
 		type: "choice",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		name: "",
 		choice: [
 			["아니, 내가 네 모발을 가져갈거다.",function(){with(obj_dialogue_system){set_dialogue(other.dialogue[6])}}],
@@ -50,7 +50,7 @@ dialogue =
 	},
 	{
 		type: "code",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_1, ST.GAME);
 		}
