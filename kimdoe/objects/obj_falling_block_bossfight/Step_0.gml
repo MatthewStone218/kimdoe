@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 block_y += yspd;
-yspd += 0.5;
+yspd += 0.1;
 
 if(block_y >= 0)
 {
@@ -21,4 +21,6 @@ if(block_y >= 0)
 	obj_player.y = _y;
 	
 	instance_create_depth(x,y,-y,obj_block_bossfight,{image_index: image_index});
+	
+	instance_destroy();
 }

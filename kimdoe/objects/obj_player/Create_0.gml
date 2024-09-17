@@ -300,7 +300,7 @@ function kick_block_bossfight(xx,yy,_dir)
 
 	play_kick_ani(_dir);
 
-	instance_position(xx,yy,obj_block).kicked(_dir);
+	instance_position(xx,yy,obj_block_bossfight).kicked(_dir);
 }
 
 function kick_enemy(xx,yy,_dir)

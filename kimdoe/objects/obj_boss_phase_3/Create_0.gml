@@ -85,10 +85,10 @@ function start_ready_block_attack()
 function start_block_attack()
 {
 	action = "block_attack";
-	total_action_time = 180;
+	total_action_time = 120;
 	with(obj_boss_block_attack_tile)
 	{
-		if(choose(true,false,false,false,false))
+		if(choose(true,false,false,false,false,false,false,false,false))
 		{
 			instance_create_depth(x,y,-y,obj_falling_block_bossfight);
 		}
