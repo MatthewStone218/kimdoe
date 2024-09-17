@@ -4,7 +4,7 @@
 if(fade_step == 0)
 {
 	image_alpha += 0.01;
-	if(image_alpha > 10)
+	if(image_alpha > 3)
 	{
 		fade_step = 1;
 	}
@@ -19,7 +19,7 @@ else if(fade_step == 1)
 		if(num >= array_length(credit))
 		{
 			num = array_length(credit)-1;
-			room_goto_f(rm_main);
+			room_goto_f(rm_main,ST.MAIN);
 		}
 	}
 }
