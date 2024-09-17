@@ -34,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_hea",
-    "path":"sprites/spr_npc_hea/spr_npc_hea.yy",
+    "name":"spr_boss_idle",
+    "path":"sprites/spr_boss_idle/spr_boss_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_boss_idle",
+    "path":"sprites/spr_boss_idle/spr_boss_idle.yy",
+  },
   "visible":true,
 }

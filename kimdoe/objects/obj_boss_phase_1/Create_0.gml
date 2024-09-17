@@ -27,6 +27,8 @@ function start_cooltime()
 {
 	action = "cooltime";
 	total_action_time = irandom_range(20,100);
+	
+	sprite_index = spr_boss_idle;
 }
 
 function start_ready_rush_attack_1()
@@ -89,10 +91,18 @@ function start_rush_attack()
 {
 	action = "rush_attack";
 	total_action_time = 10;
+	
+	var _dir = point_direction(x_prev,y_prev,x_goal,y_goal);
+	if(_dir <= 45 or _dir > 360-45){sprite_index = spr_boss_dash_right;}
+	else if(_dir <= 90+45 and _dir > 45){sprite_index = spr_boss_dash_up;}
+	else if(_dir <= 180+45 and _dir > 90+45){sprite_index = spr_boss_dash_left;}
+	else{sprite_index = spr_boss_dash_down;}
 }
 
 function rush_attack()
 {
+	image_index = ease_get_val(action_time,x_prev,x_goal);
+	
 	instance_create_depth(x,y,depth+300,obj_ef_move);
 	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
 	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);

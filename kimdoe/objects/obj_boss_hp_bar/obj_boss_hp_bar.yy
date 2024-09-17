@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss_hp_bar",
-    "path":"sprites/spr_boss_hp_bar/spr_boss_hp_bar.yy",
+    "name":"spr_boss_hp_bar_1",
+    "path":"sprites/spr_boss_hp_bar_1/spr_boss_hp_bar_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

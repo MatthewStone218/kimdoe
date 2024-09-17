@@ -74,6 +74,8 @@ function start_cooltime()
 {
 	action = "cooltime";
 	total_action_time = irandom_range(20,100);
+	
+	sprite_index = spr_boss_idle;
 }
 
 function start_ready_block_attack()
@@ -160,6 +162,8 @@ function start_helicopter_attack_2()
 	total_action_time = 60*8;
 	
 	helicopter_dir_spd = 0;
+	
+	sprite_index = spr_boss_attack_helicopter;
 }
 
 function helicopter_attack_2()
@@ -235,6 +239,12 @@ function start_rush_attack()
 {
 	action = "rush_attack";
 	total_action_time = 10;
+	
+	var _dir = point_direction(x_prev,y_prev,x_goal,y_goal);
+	if(_dir <= 45 or _dir > 360-45){sprite_index = spr_boss_dash_right;}
+	else if(_dir <= 90+45 and _dir > 45){sprite_index = spr_boss_dash_up;}
+	else if(_dir <= 180+45 and _dir > 90+45){sprite_index = spr_boss_dash_left;}
+	else{sprite_index = spr_boss_dash_down;}
 }
 
 function rush_attack()

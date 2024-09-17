@@ -10,5 +10,8 @@ draw_set_valign(fa_middle);
 
 draw_text_transformed(960,56,"모발의 요정",0.6,0.6,0);
 
-draw_sprite(sprite_index,0,x,y);
-draw_sprite_part(sprite_index,1,0,0,sprite_get_width(sprite_index)*(obj_boss.hp/100),sprite_get_height(sprite_index),x,y);
+var _hp_frame_spr = spr_boss_hp_bar_1;
+var _hp_spr = spr_boss_hp_bar_2;
+
+draw_sprite(spr_boss_hp_bar_1,0,x,y);
+draw_sprite_part(spr_boss_hp_bar_2,1,0,0,sprite_get_width(_hp_spr)*(obj_boss.hp/100),sprite_get_height(_hp_spr),x+(sprite_get_width(_hp_frame_spr)-sprite_get_width(_hp_spr))/2,y+(sprite_get_height(_hp_frame_spr)-sprite_get_height(_hp_spr))/2);
