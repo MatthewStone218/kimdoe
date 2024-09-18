@@ -43,7 +43,7 @@ global.stage_arr =
 	[rm_stage_14,ST.GAME,"똥겜은 멀지 않다"],
 	[rm_stage_15,ST.GAME,"똥겜 중독"],
 	[rm_stage_16,ST.GAME,"똥겜의 왕"],
-	[rm_stage_boss_intro,ST.GAME,"자진입대"],
+	[rm_stage_boss_intro,ST.GAME,"탈출"],
 ]
 
 texturegroup_load("ROOM_CHANGER");
