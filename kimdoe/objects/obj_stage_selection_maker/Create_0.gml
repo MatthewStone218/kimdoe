@@ -11,7 +11,7 @@ ini_close();
 
 for(var i = 0; i < min(array_length(global.stage_arr),global.cleared_stage+1); i++)
 {
-	var _inst = instance_create_layer(960,540+i*160,"stage_selection",obj_ui_stage_selection,{my_room: global.stage_arr[i][0], my_stage_state: global.stage_arr[i][1],  text: global.stage_arr[i][2]});
+	var _inst = instance_create_layer(960,540+i*100,"stage_selection",obj_ui_stage_selection,{my_room: global.stage_arr[i][0], my_stage_state: global.stage_arr[i][1],  text: global.stage_arr[i][2]});
 	
 	if(i == 0)
 	{
