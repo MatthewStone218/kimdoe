@@ -1,7 +1,7 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
-hp = 1;
+hp = 50;
 
 global.player_action_speed = 0.1;
 global.player_can_attack = true;
@@ -29,17 +29,20 @@ blink = false;
 
 function get_hit()
 {
-	if(hit <= 0)
+	if(global.state == ST.GAME)
 	{
-		hit = 30;
-		hp -= 5;
-		instance_create_depth(x,y,depth-100,obj_ef_kick);
-		obj_camera.bib = 60;
-		
-		if(hp <= 0)
+		if(hit <= 0)
 		{
-			global.state = ST.SCENE_BOSS_DIE;
-			instance_create_depth(0,0,-100000,obj_ef_boss_die);
+			hit = 30;
+			hp -= 5;
+			instance_create_depth(x,y,depth-100,obj_ef_kick);
+			obj_camera.bib = 60;
+		
+			if(hp <= 0)
+			{
+				global.state = ST.SCENE_BOSS_DIE;
+				instance_create_depth(0,0,-100000,obj_ef_boss_die);
+			}
 		}
 	}
 }

@@ -27,16 +27,19 @@ helicopter_dir = 0;
 
 function get_hit()
 {
-	if(hit <= 0)
+	if(global.state == ST.GAME)
 	{
-		hit = 30;
-		hp -= 5;
-		instance_create_depth(x,y,depth-100,obj_ef_kick);
-		obj_camera.bib = 60;
-		
-		if(hp <= 50)
+		if(hit <= 0)
 		{
-			obj_dialogue_system.set_dialogue(dialogue[0]);
+			hit = 30;
+			hp -= 5;
+			instance_create_depth(x,y,depth-100,obj_ef_kick);
+			obj_camera.bib = 60;
+		
+			if(hp <= 50)
+			{
+				obj_dialogue_system.set_dialogue(dialogue[0]);
+			}
 		}
 	}
 }
