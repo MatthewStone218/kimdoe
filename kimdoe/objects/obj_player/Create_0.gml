@@ -23,7 +23,10 @@ hair_index = 0;
 hair_x = x;
 hair_y = y;
 
-start_bgm();
+if(!is_bgm_playing())
+{
+	start_bgm();
+}
 
 function die()
 {

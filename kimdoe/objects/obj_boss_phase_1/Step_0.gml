@@ -13,6 +13,9 @@ if(global.state == ST.GAME)
 		case "rush_attack":
 			rush_attack();
 		break;
+		case "cooltime":
+			sync_image_index_to_bgm();
+		break;
 	}
 
 	if(action_time == 1)

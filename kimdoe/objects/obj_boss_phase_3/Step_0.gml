@@ -16,6 +16,9 @@ if(global.state == ST.GAME)
 		case "rush_attack":
 			rush_attack();
 		break;
+		case "cooltime":
+			sync_image_index_to_bgm();
+		break;
 		case "rush_for_helicopter":
 			rush_attack();
 		break;
