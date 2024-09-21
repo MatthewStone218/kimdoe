@@ -23,6 +23,8 @@ hair_index = 0;
 hair_x = x;
 hair_y = y;
 
+start_bgm();
+
 function die()
 {
 	if(global.state == ST.DYING)
@@ -260,6 +262,7 @@ function move(xx,yy,_dir)
 	{
 		if(position_meeting(x-global.cell_width,y,obj_player) or position_meeting(x+global.cell_width,y,obj_player) or position_meeting(x,y-global.cell_width,obj_player) or position_meeting(x,y+global.cell_width,obj_player))
 		{
+			stop_bgm();
 			interact();
 		}
 	}

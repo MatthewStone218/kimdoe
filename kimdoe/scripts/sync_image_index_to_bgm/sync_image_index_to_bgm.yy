@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sync_image_index_to_bgm",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sync_image_index_to_bgm",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

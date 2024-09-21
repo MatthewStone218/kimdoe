@@ -31,6 +31,10 @@ if(action == "move")
 {
 	set_position();
 }
+else if(action == "none")
+{
+	sync_image_index_to_bgm();
+}
 
 if(global.state == ST.GAME)
 {

@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc",
+  "%Name":"obj_bgm_sys",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npc",
+  "name":"obj_bgm_sys",
   "overriddenProperties":[],
   "parent":{
-    "name":"npc",
-    "path":"folders/Objects/game/npc.yy",
+    "name":"bgm",
+    "path":"folders/Objects/bgm.yy",
   },
-  "parentObjectId":{
-    "name":"obj_sol",
-    "path":"objects/obj_sol/obj_sol.yy",
-  },
-  "persistent":false,
+  "parentObjectId":null,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

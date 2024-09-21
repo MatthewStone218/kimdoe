@@ -29,5 +29,9 @@ if(action == "kicked")
 {
 	set_position();
 }
+else if(action == "none")
+{
+	sync_image_index_to_bgm();
+}
 
 depth = -y;
