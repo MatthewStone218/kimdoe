@@ -5,6 +5,11 @@ if(global.state == ST.DYING or global.state == ST.MOVING)
 	if(!instance_exists(obj_hair))
 	{
 		image_speed = 1;
+		if(!is_audio_played)
+		{
+			is_audio_played = true;
+			audio_play_sound(choose(snd_player_die_1,snd_player_die_2,snd_player_die_3,snd_player_die_4),1,0);
+		}
 	}
 }
 else

@@ -1,7 +1,7 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
-val_room_start = rm_main;
+val_room_start = rm_joke;
 
 #macro K_real_string kor_string + text_eng_to_hangul(kor_buffer)
 #macro LIVE if(live_call()){return live_result;}
@@ -23,12 +23,6 @@ global.player_can_attack = false;
 
 global.state = ST.MAIN;
 
-ini_open("save.ini");
-
-global.cleared_stage = ini_read_real("system","cleared_stage",0);
-
-ini_close();
-
 global.stage_arr =
 [
 	[rm_prologue,ST.DIALOGUE,"프롤로그"],
@@ -49,7 +43,7 @@ global.stage_arr =
 	[rm_stage_14,ST.GAME,"똥겜은 멀지 않다"],
 	[rm_stage_15,ST.GAME,"똥겜 중독"],
 	[rm_stage_16,ST.GAME,"똥겜의 왕"],
-	[rm_stage_boss_intro,ST.GAME,"자진입대"],
+	[rm_stage_boss_intro,ST.GAME,"탈출"],
 ]
 
 texturegroup_load("ROOM_CHANGER");
@@ -69,5 +63,6 @@ enum ST
 	GAME,
 	MOVING,
 	DYING,
-	SCENE_BOSS_1
+	SCENE_BOSS_1,
+	SCENE_BOSS_DIE
 }

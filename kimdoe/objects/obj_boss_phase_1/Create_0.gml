@@ -27,6 +27,8 @@ function start_cooltime()
 {
 	action = "cooltime";
 	total_action_time = irandom_range(20,100);
+	
+	sprite_index = spr_boss_idle;
 }
 
 function start_ready_rush_attack_1()
@@ -53,9 +55,8 @@ function start_ready_rush_attack_1()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -75,9 +76,8 @@ function start_ready_rush_attack_2()
 	var _dir = point_direction(x,y,_x,_y);
 	var _dis = point_distance(x,y,_x,_y);
 	
-	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range);
+	var _inst = instance_create_depth(x+lengthdir_x(32,_dir),y+lengthdir_y(32,_dir),-3000,obj_ef_boss_attack_range, {image_xscale: _dis-32});
 	_inst.image_angle = _dir;
-	_inst.image_xscale = _dis-32;
 	
 	x_prev = x;
 	y_prev = y;
@@ -89,10 +89,18 @@ function start_rush_attack()
 {
 	action = "rush_attack";
 	total_action_time = 10;
+	
+	var _dir = point_direction(x_prev,y_prev,x_goal,y_goal);
+	if(_dir <= 45 or _dir > 360-45){sprite_index = spr_boss_dash_right;}
+	else if(_dir <= 90+45 and _dir > 45){sprite_index = spr_boss_dash_up;}
+	else if(_dir <= 180+45 and _dir > 90+45){sprite_index = spr_boss_dash_left;}
+	else{sprite_index = spr_boss_dash_down;}
 }
 
 function rush_attack()
 {
+	image_index = ease_get_val(action_time,0,sprite_get_number(sprite_index));
+	
 	instance_create_depth(x,y,depth+300,obj_ef_move);
 	x = ease_get_val(ease_out_cubic(action_time),x_prev,x_goal);
 	y = ease_get_val(ease_out_cubic(action_time),y_prev,y_goal);
@@ -121,37 +129,37 @@ dialogue =
 [
 	{
 		type: "text",
-		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "새끼...기열!",
+		image: spr_dialogue_hair_fairy,
+		name: "모발의 요정",
+		text: "잘도 도망다니는구나.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[1]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "용서해주겠다고 했음에도 불구하고\n전우애를 실시하지 않고 도망다니는 찐빠를 내다니...",
+		image: spr_dialogue_hair_fairy,
+		name: "모발의 요정",
+		text: "모근을 상납하면 보내주겠다고 했음에도 불구하고\n도망다니는 찐빠를 내다니...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[2]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "이는 명백한 하극상이다!",
+		image: spr_dialogue_hair_fairy,
+		name: "모발의 요정",
+		text: "그래봤자 너는 영원히 나를 공격할 수 없어.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[3]; }
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "따라서 네놈을 해병 수육으로 가공함으로써 처벌하도록 하겠다!",
+		image: spr_dialogue_hair_fairy,
+		name: "모발의 요정",
+		text: "누군가 죽을 때까지 싸운다면, 결국 내 승리가 되겠지.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[4]; }
 	},
 	{
 		type: "text",
 		image: spr_dialogue_player_1,
 		name: "김도",
-		text: "젠장... 어떻게 해야 이녀석을 해치울 수 있지?\n발로 차려고 다가갔다간 따이고 말거야...",
+		text: "젠장... 어떻게 해야 이녀석을 해치울 수 있지?\n발로 차려고 다가갔다간 오히려 내가 따이고 말거야.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[5]; }
 	},
 	{
@@ -193,7 +201,7 @@ dialogue =
 		type: "text",
 		image: spr_dialogue_hair_devil,
 		name: "전 탈모의 악마",
-		text: "네 머리카락으로 저녀석을 감싸라.\n그러면 녀석을 공격할 수 있어.",
+		text: "네 머리카락으로 저녀석을 감싸라.\n그러면 공격할 수 있어.",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[11]; }
 	},
 	{
@@ -219,14 +227,14 @@ dialogue =
 	},
 	{
 		type: "text",
-		image: spr_dialogue_hea,
-		name: "지  옥에서는 아무도 못 나가 해병님",
-		text: "해병대에 적합한 몸을 하고도 입영하지 않은 탈영병이 하나 더 있다니!\n새끼...기열!",
+		image: spr_dialogue_hair_fairy,
+		name: "모발의 요정",
+		text: "이런, 방해꾼이 등장했군...",
 		next_struct: function(){ return obj_boss_phase_1.dialogue[15]; }
 	},
 	{
 		type: "code",
-		image: spr_dialogue_hea,
+		image: spr_dialogue_hair_fairy,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_2, ST.GAME);
 		}

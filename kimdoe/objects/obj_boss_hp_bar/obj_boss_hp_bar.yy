@@ -2,6 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_boss_hp_bar",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss_hp_bar",
-    "path":"sprites/spr_boss_hp_bar/spr_boss_hp_bar.yy",
+    "name":"spr_boss_hp_bar_1",
+    "path":"sprites/spr_boss_hp_bar_1/spr_boss_hp_bar_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

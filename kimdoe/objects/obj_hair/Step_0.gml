@@ -3,7 +3,7 @@
 
 if(move_time < 1)
 {
-	move_time += 0.05;
+	move_time += global.player_action_speed;
 	
 	if(move_time > 1)
 	{
