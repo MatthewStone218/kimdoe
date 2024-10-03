@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"bgm_",
+  "%Name":"scr_bgm",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"bgm_",
+  "name":"scr_bgm",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
