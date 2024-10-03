@@ -40,6 +40,7 @@ function get_hit()
 		
 			if(hp <= 0)
 			{
+				stop_bgm();
 				global.state = ST.SCENE_BOSS_DIE;
 				instance_create_depth(0,0,-100000,obj_ef_boss_die);
 			}
