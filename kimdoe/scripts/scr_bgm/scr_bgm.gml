@@ -1,13 +1,15 @@
 // v2.3.0에 대한 스크립트 어셋 변경됨 자세한 정보는
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 참조
 function init_bgm(){
+	global.bgm_index = -1;
 	global.bgm = -1;
 	global.stoped_bgm = [];
 }
 
-function start_bgm(){
+function start_bgm(bgm){
 	stop_bgm();
-	global.bgm = audio_play_sound(snd_bgm,1,1);
+	global.bgm = audio_play_sound(bgm,1,1);
+	global.bgm_index = bgm;
 }
 
 function stop_bgm(){
@@ -25,6 +27,7 @@ function add_bgm_on_stoped_list(_bgm){
 
 function reset_bgm(){
 	global.bgm = -1;
+	global.bgm_index = -1;
 }
 
 function get_stoped_bgms()

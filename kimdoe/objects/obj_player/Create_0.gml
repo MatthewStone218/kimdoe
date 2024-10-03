@@ -23,9 +23,17 @@ hair_index = 0;
 hair_x = x;
 hair_y = y;
 
-if(!is_bgm_playing())
+var _bgm = snd_bgm;
+
+if(room == rm_stage_boss_phase_1 || room == rm_stage_boss_phase_2 || room == rm_stage_boss_phase_3){
+	_bgm = snd_bgm_boss_2;
+} else {
+	_bgm = snd_bgm;
+}
+	
+if(global.bgm_index != _bgm)
 {
-	start_bgm();
+	start_bgm(_bgm);
 }
 
 function die()

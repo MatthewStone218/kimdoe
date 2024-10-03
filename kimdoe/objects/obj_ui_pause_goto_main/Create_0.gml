@@ -20,5 +20,6 @@ navigation =
 
 function ok()
 {
+	stop_bgm();
 	room_goto_f(rm_main,ST.MAIN);
 }

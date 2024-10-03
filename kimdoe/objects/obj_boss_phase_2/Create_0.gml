@@ -1,6 +1,8 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
 
+blink = false;
+
 hp = 100;
 
 global.player_action_speed = 0.1;
@@ -32,7 +34,7 @@ function get_hit()
 		if(hit <= 0)
 		{
 			hit = 30;
-			hp -= 5;
+			hp -= 10;
 			instance_create_depth(x,y,depth-100,obj_ef_kick);
 			obj_camera.bib = 60;
 		

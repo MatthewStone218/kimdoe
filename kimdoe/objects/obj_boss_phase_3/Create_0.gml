@@ -34,7 +34,7 @@ function get_hit()
 		if(hit <= 0)
 		{
 			hit = 30;
-			hp -= 5;
+			hp -= 8;
 			instance_create_depth(x,y,depth-100,obj_ef_kick);
 			obj_camera.bib = 60;
 		

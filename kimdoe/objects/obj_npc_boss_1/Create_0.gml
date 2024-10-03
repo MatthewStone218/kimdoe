@@ -1,5 +1,6 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
+call_later(60, time_source_units_frames,function(){start_bgm(snd_bgm_boss_1)});
 y2 = -500;
 
 dialogue = 
@@ -75,6 +76,7 @@ dialogue_die =
 		type: "code",
 		name: "",
 		func: function(){
+			stop_bgm();
 			with(obj_dialogue_system){kill_dialogue();}
 			with(obj_player){kill_self();}
 		}
