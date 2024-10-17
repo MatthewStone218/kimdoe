@@ -167,6 +167,8 @@ function unlock_block(xx,yy)
 
 function move(xx,yy,_dir)
 {
+	audio_stop_sound(snd_move);
+	audio_play_sound(snd_move,1,0);
 	instance_create_depth(x,y,depth,obj_ef_move);
 	dir = _dir;
 	action = "move";
@@ -273,7 +275,6 @@ function move(xx,yy,_dir)
 	{
 		if(position_meeting(x-global.cell_width,y,obj_player) or position_meeting(x+global.cell_width,y,obj_player) or position_meeting(x,y-global.cell_width,obj_player) or position_meeting(x,y+global.cell_width,obj_player))
 		{
-			stop_bgm();
 			interact();
 		}
 	}

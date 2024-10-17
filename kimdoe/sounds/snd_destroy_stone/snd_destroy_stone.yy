@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_destroy_stone",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.714271,
+  "name":"snd_destroy_stone",
+  "parent":{
+    "name":"effects",
+    "path":"folders/Sounds/effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_destroy_stone.ogg",
+  "type":0,
+  "volume":1.0,
+}

@@ -5,6 +5,7 @@ depth = -y;
 
 function unlock()
 {
+	audio_play_sound(snd_use_key,1,0);
 	global.key--;
 	instance_create_depth(x,y,depth-1000,obj_ef_gain_item);
 	instance_destroy();

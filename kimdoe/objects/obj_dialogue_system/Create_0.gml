@@ -7,6 +7,8 @@ struct_now = {};
 
 function set_dialogue(struct)
 {
+	audio_stop_sound(snd_option_select);
+	audio_play_sound(snd_option_select,1,0);
 	struct_now = struct;
 	global.state = ST.DIALOGUE;
 	

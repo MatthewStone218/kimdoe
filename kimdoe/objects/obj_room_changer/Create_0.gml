@@ -9,3 +9,5 @@ image_xscale = 2;
 image_yscale = 2;
 
 global.state = ST.MOVING;
+
+audio_play_sound(snd_transition,1,0);

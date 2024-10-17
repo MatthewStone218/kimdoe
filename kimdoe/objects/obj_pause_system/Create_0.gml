@@ -7,6 +7,7 @@ register_click_func(
 	function(){return global.state != ST.MAIN && global.state != ST.MOVING && input_check_pressed("pause");},
 	function()
 	{
+		audio_play_sound(snd_option_close,1,0);
 		if(global.state == ST.PAUSE)
 		{
 			global.state = prev_state;

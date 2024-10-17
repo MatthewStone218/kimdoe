@@ -214,6 +214,8 @@ function start_ready_rush_attack_2()
 
 function start_rush_attack()
 {
+	audio_stop_sound(snd_move);
+	audio_play_sound(snd_move,1,0);
 	action = "rush_attack";
 	total_action_time = 10;
 	

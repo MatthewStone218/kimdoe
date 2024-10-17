@@ -8,6 +8,8 @@ if(global.state == ST.DYING or global.state == ST.MOVING)
 		if(!is_audio_played)
 		{
 			is_audio_played = true;
+			audio_stop_sound(snd_died);
+			audio_play_sound(snd_died,1,0);
 			audio_play_sound(choose(snd_player_die_1,snd_player_die_2,snd_player_die_3,snd_player_die_4),1,0);
 		}
 	}

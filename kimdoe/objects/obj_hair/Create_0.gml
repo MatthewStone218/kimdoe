@@ -14,6 +14,8 @@ y_goal = y;
 
 function die(chain_parent)
 {
+	audio_stop_sound(snd_hair_explode);
+	audio_play_sound(snd_hair_explode,1,0);
 	repeat(100)
 	{
 		instance_create_depth(x+random_range(-20,20),y+random_range(-20,20),depth,obj_ef_hair_die);

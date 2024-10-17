@@ -15,6 +15,8 @@ action_time = 1;
 
 function kicked(dir)
 {
+	audio_stop_sound(snd_kick_stone);
+	audio_play_sound(snd_kick_stone,1,0);
 	switch(dir)
 	{
 		case "left":
