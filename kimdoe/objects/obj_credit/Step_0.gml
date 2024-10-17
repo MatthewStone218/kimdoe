@@ -19,6 +19,7 @@ else if(fade_step == 1)
 		if(num >= array_length(credit))
 		{
 			num = array_length(credit)-1;
+			stop_bgm();
 			room_goto_f(rm_main,ST.MAIN);
 		}
 	}

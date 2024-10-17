@@ -142,7 +142,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"kimdoe",
   "resources":[
@@ -713,6 +713,7 @@
     {"id":{"name":"shd_white","path":"shaders/shd_white/shd_white.yy",},},
     {"id":{"name":"snd_bgm_boss_1","path":"sounds/snd_bgm_boss_1/snd_bgm_boss_1.yy",},},
     {"id":{"name":"snd_bgm_boss_2","path":"sounds/snd_bgm_boss_2/snd_bgm_boss_2.yy",},},
+    {"id":{"name":"snd_bgm_ending","path":"sounds/snd_bgm_ending/snd_bgm_ending.yy",},},
     {"id":{"name":"snd_bgm","path":"sounds/snd_bgm/snd_bgm.yy",},},
     {"id":{"name":"snd_destroy_stone","path":"sounds/snd_destroy_stone/snd_destroy_stone.yy",},},
     {"id":{"name":"snd_died","path":"sounds/snd_died/snd_died.yy",},},

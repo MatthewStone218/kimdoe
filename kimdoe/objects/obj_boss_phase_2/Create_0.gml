@@ -272,7 +272,7 @@ dialogue =
 	},
 	{
 		type: "code",
-		image: spr_dialogue_player_1,
+		image: spr_dialogue_hair_fairy,
 		func: function(){
 			room_goto_f(rm_stage_boss_phase_3, ST.GAME);
 		}

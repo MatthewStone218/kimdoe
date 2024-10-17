@@ -1,5 +1,6 @@
 /// @description 여기에 설명 삽입
 // 이 에디터에 코드를 작성할 수 있습니다
+start_bgm(snd_bgm_ending);
 
 dialogue = 
 [
@@ -37,7 +38,7 @@ dialogue =
 	},
 	{
 		type: "code",
-		image: spr_prologue_image_3,
+		image: spr_ending_image_3,
 		bg: spr_ui_dialogue_bg_1,
 		no_belt: true,
 		func: function()
